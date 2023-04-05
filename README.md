@@ -16,9 +16,9 @@
 
 ### Dataset
 
-Our main goal is to make existing figure interactive, so most of the "dataset" is actually figures.
+Our main goal is to make existing figures interactive, so most of the "dataset" is figures.
 
-We also give a name to each dataset so that we can refer to them in the next section.
+We also give each dataset a name so we can refer to them in the next section.
 
 Data-based dataset:
 - (`D-1`) The evolution of semiconductor technology on a single chip, including the transistor counts, the power limit, and the relative performance: https://github.com/karlrupp/microprocessor-trend-data
@@ -41,28 +41,29 @@ Figure-based dataset:
 
 ### Problematic
 
-The high-level idea of this project is to build a visual museum of the CPU development history, influenced both by the technology innovation (e.g., Moore's law) and the architectural improvement. 
+The high-level idea of this project is to build a visual museum of the CPU development history, influenced both by technological innovation (e.g., Moore's law) and architectural improvement. 
 
-By analyzing `D-1` using our knowledge, there are 4 different stages:
-- Early developing stage (1960s to 1980). During this time, CPUs are designed by hand, and the integrated circuit scale is small. We would like to show the figure of first integrated transistor (`F-1`) and Intel 4004 (`F-2`), which is a manual design containing 4000+ transistors.
-- Architecture Innovation (1980s to 2005) for Single Core Performance. During this period, better technology gives more transistor budgets and higher frequency, while reducing its power consumption. Architects exploit the parallelism among instructions by using more complex structures, e.g., pipelines (`F-4`), multiple issues (`F-5`), and Out of program order execution (`F-6`). We would like to show the die pictures of these processors, their logical pipeline diagrams, and their way to execute instructions using small animations.
-- Parallel Processors (2005 to Now). Due to the power limit, it is impossible to improve the single core performance. As a result, architects are working on processors with vector execution unit and multicore processors. We would like to show a detailed processor chip picture (`F-7`) and its logical component to see its great complexity and powerful vector unit. We will also display the evolution of each component over years.  We also shows some typical on-chip interconnect topology (e.g., Ring `F-8` and Mesh `F-9`) which makes multicore processors feasible and functional correct.
-- Specialization (2016 to Now). Processors are not energy-efficient when processing some specialized task, e.g., graphics rendering and machine learning. As a result, hardware designers also come up with specialized hardware for these tasks, and they are put on the same chip with general-purpose CPUs, as a versatile on-chip system for users. We would like to show a Integrated GPU structure (Intel Xe Gen9, `F-10`) and compare it with CPU, and then a typical on-chip system (Apple M1, `F-11`), with introduction to its every component.
+By analyzing `D-1` using our knowledge, there are four different stages:
+- Early developing stage (From the 1960s to 1980). During this time, CPUs were manually designed, and the integrated circuit scale was small. We would like to show the figure of the first integrated transistor (`F-1`) and Intel 4004 (`F-2`), a manually designed CPU containing 4000+ transistors.
+- Architecture Innovation (From the 1980s to 2005) for Single Core Performance. During this period, better technology gave more transistor budgets and a higher frequency while reducing power consumption. Moreover, architects exploited the parallelism among instructions by using more complex structures, e.g., pipelines (`F-4`), multiple issues (`F-5`), and Out of program order execution (`F-6`). We would like to show the die pictures of these processors, their logical pipeline diagrams, and their way of executing instructions using small animations.
+- Parallel Processors (2005 to Now). Due to the power limit, it was not wise to continue improving the single-core performance. As a result, architects are working on processors with vector execution units and multicore processors. We would like to show a detailed processor chip picture (`F-7`) and its logical component to see its incredible complexity and powerful vector unit. We will also display the evolution of each component over the years. For multicore processors, we will show some typical on-chip interconnect topology (e.g., Ring `F-8` and Mesh `F-9`), which makes multicore processors integrated and functionally correct.
+- Specialization (2016 to Now). Processors are not energy-efficient when processing some specialized tasks, e.g., graphics rendering and machine learning. As a result, hardware designers also developed specialized hardware for these tasks. They are integrated on the same chip with general-purpose CPUs as a versatile on-chip system for users. We would like to show an integrated GPU (Intel Xe Gen9, `F-10`) and compare it with a CPU, and then a typical on-chip system (Apple M1, `F-11`), with an introduction to its every component (CPUs, energy-efficient CPUs, GPU, Neural Engine, Encryption Unit, I/O).
 
-The target audience of this project is mainly for computer science bachelor and master students, who has interest in processor design. Besides conveying knowledge, we are also motivated by the complex structure, the beauty as well as the pattern of the chip, and human's wisdom to design these powerful hardware.
+The target audience of this project is mainly computer science bachelor and master students who have an interest in processor design. Besides conveying knowledge, we are also motivated by the complex structure, the beauty and pattern of the chip, and the delicate human wisdom to design powerful hardware.
 
 ### Exploratory Data Analysis
 
-TBD on Wednesday, but the main insight would be like:
-- Power limit is the main reason why people shifted to multicore and parallel structure. 
-- The scale of hardware components grows in general. There were some aggressive outliers in the processor development history, but they quickly followed the normal trend in the next generation, indicating that the processor design is not just making hardware structure bigger.
-- Intel's processor stay constant between 2012 to 2018, because AMD did not ship good CPUs. However, when the powerful AMD Zen is released, Intel quickly improved its CPU. This implies that competition is necessary for product improvement. :)
+TBD on Wednesday, but the main insight would be:
+- Power limit is why people shifted to multicore and parallel processors. 
+- The scale of hardware components grows in general. There were some aggressive outliers in history, but they quickly followed the normal trend in the next generation, indicating that the processor design is not simply making the hardware structure bigger.
+- Intel's processors stayed constant between 2012 to 2018 because AMD did not ship good designs. However, when the powerful AMD Zen was released, Intel quickly improved its CPU. This reaction implies that competition is necessary for product improvement. :)
 
 ### Related work
 
-People already uses these data and figures to write blog (e.g., [Chip and Cheese](https://chipsandcheese.com/) and [Karl Rupp](https://www.karlrupp.net/2018/02/42-years-of-microprocessor-trend-data/)) and analyze the performance of a CPU. However, their goal is mainly focus on analysis and their audiences are professional readers. We want to make these figure interactive, and our audience is for students having interest in this field. As far as we know, there is not interactive visualization of these structures. 
+People already use these data and figures to write blogs (e.g., [Chip and Cheese](https://chipsandcheese.com/) and [Karl Rupp](https://www.karlrupp.net/2018/02/42-years-of-microprocessor-trend-data/)) and analyze the performance of these CPUs. However, their goal mainly focuses on analysis, and their audiences are professional readers. We want to make these figures interactive, and our audience is students interested in this field. As far as we know, these hardware figures have no interactive visualization. 
 
-We take inspirations from the visualization project about [wine](https://github.com/com-480-data-visualization/com-480-project-onvagagner). It also does not have much data to show, but it is graceful and makes people engaged.
+We take inspiration from the visualization project about [wine](https://github.com/com-480-data-visualization/com-480-project-onvagagner). It also does not have much data to show, but it is graceful and engages people.
+
 
 ## Milestone 2 (7th May, 5pm)
 
