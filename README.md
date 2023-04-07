@@ -23,7 +23,6 @@ We also give each dataset a name so we can refer to them in the next section.
 Data-based dataset:
 - (`D-1`) The evolution of semiconductor technology on a single chip, including the transistor counts, the power limit, and the relative performance: https://github.com/karlrupp/microprocessor-trend-data
 - (`D-2`) The evolution of processor architecture, including the parameter of cache, OoO window, etc. (Manually collected): https://docs.google.com/spreadsheets/d/1yJfT3mDx2eucNy9hRfu0SeN6Q3OyYJL64gCJAcmVeCY/edit?usp=sharing
-- (`D-3`) The specification of prevalent processors: https://www.kaggle.com/datasets/lincolnzh/cpu-specifications-dataset
 
 Figure-based dataset:
 - (`F-1`) The first integrated transistor: https://www.edn.com/noyce-receives-1st-ic-patent-april-25-1961/
@@ -53,8 +52,9 @@ The target audience of this project is mainly computer science bachelor and mast
 
 ### Exploratory Data Analysis
 
-TBD on Wednesday, but the main insight would be:
-- Power limit is why people shifted to multicore and parallel processors. 
+Please checek the `eda.ipynb` file for the visualization. The main observations are:
+
+- Power limit is why people shifted to multicore processors and specialized hardware. 
 - The scale of hardware components grows in general. There were some aggressive outliers in history, but they quickly followed the normal trend in the next generation, indicating that the processor design is not simply making the hardware structure bigger.
 - Intel's processors stayed constant between 2012 to 2018 because AMD did not ship good designs. However, when the powerful AMD Zen was released, Intel quickly improved its CPU. This reaction implies that competition is necessary for product improvement. :)
 
