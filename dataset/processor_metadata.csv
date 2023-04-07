@@ -1,0 +1,21 @@
+Years,Vendor,Code Name,BTB,Mop Cache,L1I,L1D,L2,Decode Width,ROB,Int. Scheduler,ALU Count,AGU Count,Load Queue Size,Store Queue,size,Fill Buffer,Arch link
+1995,Intel,P6,512,0,8,8,256,3,40,20,2,2,16,12,0,https://chipsandcheese.com/2022/06/17/intels-netburst-failure-is-a-foundation-for-success/
+2000,Intel,NetBurst,4096,0,12,16,256,3,126,245,4,2,48,34,0,
+2006,Intel,Core,2048,0,32,32,256,4,96,32,3,2,32,20,0,https://chipsandcheese.com/2023/02/05/intels-dunnington-core-2-goes-dun-dun-dun/
+2010,Intel,Sandy Bridge,4096,1536,32,32,256,4,168,54,3,2,64,36,10,https://en.wikichip.org/wiki/intel/microarchitectures/sandy_bridge_(client)
+2013,Intel,Haswell,4096,1536,32,32,256,4,192,60,4,3,72,42,10,https://chipsandcheese.com/2022/10/14/skylake-intels-longest-serving-architecture/
+2014,Intel,Broadwell,4096,1536,32,32,256/1024,4,192,64,4,3,72,42,10,https://en.wikichip.org/wiki/intel/microarchitectures/broadwell_(client)
+2015,Intel,Skylake,4096,1536,32,32,256/1024,4,224,97,4,3,72,56,10,https://chipsandcheese.com/2022/10/14/skylake-intels-longest-serving-architecture/
+2017,Intel,Coffee Lake,4096,1536,32,32,256/1024,4,224,97,4,3,72,56,10,https://en.wikichip.org/wiki/intel/microarchitectures/coffee_lake
+2019,Intel,Sunny Cove,5120,2304,32,48,512/1024,5,352,160,4,4,128,72,12,https://chipsandcheese.com/2022/06/07/sunny-cove-intels-lost-generation/
+2021,Intel,Golden Cove,12288,4096,32,48,1280,6,352,205,5,5,192,114,16,https://chipsandcheese.com/2021/12/02/popping-the-hood-on-golden-cove/
+1996,AMD,K5,256,0,16,8,0,1,16,6,2,2,2,2,0,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=491459
+1997,AMD,K6,?,0,32,32,0,2,24,16,2,2,4,4,0,https://en.wikichip.org/wiki/amd/microarchitectures/k6
+1999,AMD,K7,2048,0,64,64,256,3,72,15,3,3,44,,0,http://www.azillionmonkeys.com/qed/cpujihad.shtml
+2003,AMD,K8,2048,0,64,64,512,3,72,24,3,3,44,,8,https://chipsandcheese.com/2022/07/28/amds-athlon-64-getting-the-basics-right/
+2007,AMD,K10,2048,0,64,64,512,3,72,24,3,3,44,,8,https://en.wikipedia.org/wiki/AMD_10h
+2011,AMD,Bulldozer,5120,0,64,32,2048,4,256,80,4,4,80,48,32,https://chipsandcheese.com/2023/01/22/bulldozer-amds-crash-modernization-frontend-and-execution-engine/
+2017,AMD,Zen,1024,2048,64,32,512,6,192,84,4,2,72,44,?,https://en.wikichip.org/wiki/amd/microarchitectures/zen
+2019,AMD,Zen2,14336,4096,32,32,512,6,224,92,4,3,116,48,22,https://i0.wp.com/chipsandcheese.com/wp-content/uploads/2021/10/zen2.drawio.png?ssl=1
+2020,AMD,Zen3,13312,4096,32,32,512,6,256,96,6,3,116,64,24,https://chipsandcheese.com/2022/11/05/amds-zen-4-part-1-frontend-and-execution-engine/zen3-drawio/
+2022,AMD,Zen4,14336,6912,32,32,1024,6,320,96,6,3,136,64,24?,https://chipsandcheese.com/2022/11/05/amds-zen-4-part-1-frontend-and-execution-engine/zen3-drawio/
