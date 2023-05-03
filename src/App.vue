@@ -1,11 +1,22 @@
 <script setup>
-import Cover from "./components/Cover.vue"
+import Cover from "./components/Cover.vue";
+import Chapter2 from "./components/Chapter2.vue";
+import Chapter3 from "./components/Chapter3.vue";
+import Chapter4 from "./components/Chapter4.vue";
+import Chapter5 from "./components/Chapter5.vue";
+import Chapter6 from "./components/Chapter6.vue";
+import Acknowledgement from "./components/Acknowledgement.vue";
 </script>
 
 <template>
   <full-page :options="options">
     <Cover></Cover>
-    <div class="section bg-gray-500"></div>
+    <Chapter2></Chapter2>
+    <Chapter3></Chapter3>
+    <Chapter4></Chapter4>
+    <Chapter5></Chapter5>
+    <Chapter6></Chapter6>
+    <Acknowledgement></Acknowledgement>
   </full-page>
 </template>
 
@@ -45,6 +56,8 @@ export default {
     return {
       options: {
         scrollOverflow: true,
+        navigation: true,
+        slidesNavigation: true
       }
     }
   }
