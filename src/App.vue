@@ -1,20 +1,12 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Cover from "./components/Cover.vue"
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <full-page :options="options">
+    <Cover></Cover>
+    <div class="section bg-gray-500"></div>
+  </full-page>
 </template>
 
 <style scoped>
@@ -45,3 +37,17 @@ header {
   }
 }
 </style>
+
+<script>
+
+export default {
+  data() {
+    return {
+      options: {
+        scrollOverflow: true,
+      }
+    }
+  }
+}
+
+</script>
