@@ -1,5 +1,6 @@
 <script setup>
 import Chapter21 from './Chapter2-1.vue';
+import Chapter22 from './Chapter2-2.vue';
 </script>
 
 <template>
@@ -11,10 +12,10 @@ import Chapter21 from './Chapter2-1.vue';
             <Chapter21></Chapter21>
         </div>
         <div class="slide flex">
-            <h2>The Scaling of Transistors</h2>
+            <Chapter22></Chapter22>
         </div>
         <div class="slide flex">
-            <h2>From Transistor to Logic</h2>
+            <h2>Scaling Trend of Transistor</h2>
         </div>
         <div class="slide flex">
             <h2>The Moore's Law</h2>

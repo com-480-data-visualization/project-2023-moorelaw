@@ -1,17 +1,11 @@
 <template>
     <div class="section flex bg1">
-        <p class="user-title mx-auto">Moore's law</p>
+        <div class="text-8xl text-orange-100 text-shadow+ leading-loose">Moore's law</div>
     </div>
     <p class="annotate1 absolute">The journey of semiconductor and CPU performance growing</p>
 </template>
 
 <style scoped>
-
-.user-title {
-    font-size: 90pt;
-    color: #ffedd5;
-    text-shadow: 0px 0px 20px #334155;
-}
 
 .bg1 {
     align-items: center;
@@ -30,7 +24,6 @@
     text-align: center;
     transform: translate(-50%, -50%);
     text-shadow: 0px 0px 20px #334155;
-    
 }
 
 </style>

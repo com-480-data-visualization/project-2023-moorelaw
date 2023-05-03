@@ -23,11 +23,8 @@
             <circle cx="465" cy="90" r="10" fill="none" />
             <path d="M300,108 v-47" />
             <circle cx="300" cy="51" r="10" fill="none" />
-            <path d="M255,276 v23" />
-            <circle cx="255" cy="309" r="10" fill="none" />
             <path fill="none" d="M195,54 C213,69 201,144 234,150" />
-            <path fill="none" d="M237,210 h126 M237,210 l6,-3 v6 z M363,210 l-6,-3 v6 z" />
-            <path fill="none" d="M234,180 h57 M291,180 l-6,-3 v6 z" />
+
             
             <rect x="15" y="520" width="570" height="130" fill="#D8D890" />
             <rect x="72" y="520" width="159" height="130" fill="#D48080" />
@@ -45,13 +42,10 @@
             stroke="none" text-anchor="end">
             <text x="147" y="192">n+</text>
             <text x="480" y="192">n+</text>
-            <text x="258" y="246">p</text>
-            <text x="315" y="186">x</text>
-            <text x="300" y="237">L</text>
+            <text x="300" y="246">p</text>
             <text x="120" y="81">Source</text>
             <text x="450" y="81">Drain</text>
             <text x="285" y="42">Gate</text>
-            <text x="240" y="339">Body</text>
             <text x="189" y="57">Oxide</text>
         </g>
     </svg>
