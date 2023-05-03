@@ -17,9 +17,6 @@ import Chapter22 from './Chapter2-2.vue';
         <div class="slide flex">
             <h2>Scaling Trend of Transistor</h2>
         </div>
-        <div class="slide flex">
-            <h2>The Moore's Law</h2>
-        </div>
     </div>
 </template>
 

@@ -5,7 +5,7 @@
 -->
 
 <template>
-    <svg viewBox="0 0 600 750" width="600px" height="600px">
+    <svg viewBox="0 0 600 300" width="600px" height="400px">
         <g xmlns="http://www.w3.org/2000/svg" stroke="#000" stroke-width="3">
 
             <!-- The top -->
@@ -25,16 +25,17 @@
             <circle cx="300" cy="51" r="10" fill="none" />
             <path fill="none" d="M195,54 C213,69 201,144 234,150" />
 
+            <!--
+                <rect x="15" y="520" width="570" height="130" fill="#D8D890" />
+                <rect x="72" y="520" width="159" height="130" fill="#D48080" />
+                <rect x="354" y="520" width="180" height="130" fill="#D48080" />
+
+                <rect x="222" y="445" width="159" height="300" fill="#88A888" />
+
+                <rect x="96" y="546" width="78" height="78" fill="#70B8D8" />
+                <rect x="426" y="546" width="78" height="78" fill="#70B8D8" />
+            -->
             
-            <rect x="15" y="520" width="570" height="130" fill="#D8D890" />
-            <rect x="72" y="520" width="159" height="130" fill="#D48080" />
-            <rect x="354" y="520" width="180" height="130" fill="#D48080" />
-
-            <rect x="222" y="445" width="159" height="300" fill="#88A888" />
-
-            <rect x="96" y="546" width="78" height="78" fill="#70B8D8" />
-            <rect x="426" y="546" width="78" height="78" fill="#70B8D8" />
-
             
 
         </g>
