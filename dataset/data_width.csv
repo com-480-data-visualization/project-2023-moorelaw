@@ -1,0 +1,10 @@
+years,type,product,width
+1971,scalar,Intel 4004,4
+1972,scalar,Intel 8008,8
+1978,scalar,Intel 8086,16
+1985,scalar,Intel i386,32
+1991,scalar,MIPS R4000,64
+1999,vector extension,Intel Pentium III,64x2 (SSE)
+2011,vector extension,Intel Sandy Bridge,64x4 (AVX)
+2016,vector extension,Intel Knight Landing,64x8 (AVX-512)
+2023,vector extension,Intel Xeon Sapphire Rapids,64x16x2 (AME)

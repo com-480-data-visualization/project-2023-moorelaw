@@ -1,6 +1,7 @@
 <script setup>
 import Chapter21 from './Chapter2-1.vue';
 import Chapter22 from './Chapter2-2.vue';
+import Chapter23 from './Chapter2-3.vue';
 </script>
 
 <template>
@@ -15,7 +16,7 @@ import Chapter22 from './Chapter2-2.vue';
             <Chapter22></Chapter22>
         </div>
         <div class="slide flex">
-            <h2>Scaling Trend of Transistor</h2>
+            <Chapter23></Chapter23>
         </div>
     </div>
 </template>
