@@ -115,6 +115,25 @@ export default {
             },
             {
                 highlight_region: [
+                    "wf_ooo_resources",
+                    "wf_font_42",
+                    "wf_integer_register_file",
+                    "wf_font_13",
+                    "path308-2-1-8", // Integer Register File
+                    "wf_vector_register_file",
+                    "wf_font_14",
+                    "path308-2-9-7", // Vector / FP Register File
+                    "path308-2-9-7-6", // Vector / FP Register File
+                    "path308-2-9-5-5", // Extends Vector RF to 512 bits on SKL-X
+                    "path308-2-9-5-5-4", // Extends Vector RF to 512 bits on SKL-X
+                    "wf_mmx_x87",
+                    "wf_font_15",
+                    "path308-1-2-5", // MMX / x87 Register File
+                ],
+                description: "OoO Resources",
+            },
+            {
+                highlight_region: [
                     "wf_integer_register_file",
                     "wf_font_13",
                     "path308-2-1-8", // Integer Register File

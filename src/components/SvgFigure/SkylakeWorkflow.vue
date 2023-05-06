@@ -85,7 +85,7 @@
                         text-anchor="middle">L1 Instruction Cache</text>
                 </switch>
             </g>
-            <rect x="280" y="90" width="170" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" wf_instruction_queue />
+            <rect  x="280" y="90" width="170" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_instruction_queue" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -273,7 +273,7 @@
                         text-anchor="middle">Reorder Buffer</text>
                 </switch>
             </g>
-            <rect x="10" y="410" width="590" height="70" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="10" y="410" width="590" height="70" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_ooo_resources"/>
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -285,7 +285,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">OoO Resources<br /><br /><br /></font>
+                                    <font 
+                                    id="wf_font_42"
+                                    style="font-size: 15px;">OoO Resources<br /><br /><br /></font>
                                 </div>
                             </div>
                         </div>
