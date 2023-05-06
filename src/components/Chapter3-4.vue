@@ -20,49 +20,52 @@ import * as d3 from "d3";
 <script>
 export default {
     mounted() {
-        d3.select("#path18245")
+        let workflow_arr = ['#path308-2-3-2']
+        let dieshot_arr = ['#path18245']
+
+        d3.select(workflow_arr[0])
             .on('mouseover', function (d, i) {
-                d3.select("#path308-2-3-2")
+                d3.select(workflow_arr[0])
                     .transition()
                     .duration('100')
                     .style('opacity', '1');
-                d3.select('#path18245')
+                d3.select(dieshot_arr[0])
                     .transition()
                     .duration('300')
                     .style('opacity', '1');
             })
             .on('mouseout', function (d, i) {
-                d3.select("#path308-2-3-2")
+                d3.select(workflow_arr[0])
                     .transition()
                     .duration('300')
                     .style('opacity', '0');
-                d3.select('#path18245')
+                d3.select(dieshot_arr[0])
                     .transition()
                     .duration('100')
                     .style('opacity', '0');
             });
 
-        d3.select("#path308-2-3-2")
-            .on('mouseover', function (d, i) {
-                d3.select('#path18245')
-                    .transition()
-                    .duration('300')
-                    .style('opacity', '1');
-                d3.select("#path308-2-3-2")
-                    .transition()
-                    .duration('300')
-                    .style('opacity', '1');
-            })
-            .on('mouseout', function (d, i) {
-                d3.select('#path18245')
-                    .transition()
-                    .duration('300')
-                    .style('opacity', '0');
-                d3.select("#path308-2-3-2")
-                    .transition()
-                    .duration('300')
-                    .style('opacity', '0');
-            });
+        // d3.select("#path308-2-3-2")
+        //     .on('mouseover', function (d, i) {
+        //         d3.select('#path18245')
+        //             .transition()
+        //             .duration('300')
+        //             .style('opacity', '1');
+        //         d3.select("#path308-2-3-2")
+        //             .transition()
+        //             .duration('300')
+        //             .style('opacity', '1');
+        //     })
+        //     .on('mouseout', function (d, i) {
+        //         d3.select('#path18245')
+        //             .transition()
+        //             .duration('300')
+        //             .style('opacity', '0');
+        //         d3.select("#path308-2-3-2")
+        //             .transition()
+        //             .duration('300')
+        //             .style('opacity', '0');
+        //     });
     }
 }
 </script>
