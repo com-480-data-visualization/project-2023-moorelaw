@@ -6,11 +6,11 @@ import * as d3 from "d3";
 </script>
 
 <template>
-    <div class="flex-col h-full">
-        <h2 class="h-1/7 mt-10">Example: Intel Skylake (2015)</h2>
-        <div class="flex mt-5 h-3/5">
-            <img src="/figure/skylake-workflow.drawio.svg" class="w-auto">
-            <Skylake class="w-3/5 mx-10"></Skylake>
+    <div class="flex-col h-9/10">
+        <h2 class="h-1/8 mt-10">Example: Intel Skylake (2015)</h2>
+        <div class="flex mt-5 w-7/8 mx-auto h-4/5">
+            <img src="/figure/skylake-workflow.drawio.svg" class="h-full">
+            <Skylake class="h-full ml-10"></Skylake>
         </div>
     </div>
 </template>
