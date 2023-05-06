@@ -178,9 +178,6 @@
                     style="fill:#00e7a2;fill-opacity:0.365246;stroke:none;stroke-width:0.716793px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                     d="m -398.80119,107.63161 h -83.7025 -7.63172 v 171.39384 h 91.94005 z" id="path308-1-2-9-6-3-8" />
                 <path
-                    style="fill:#00e7a2;fill-opacity:0.365246;stroke:none;stroke-width:1.14955px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                    d="m -14.427463,571.0918 h -656.787947 -59.8837 v 56.17944 H -9.673713 Z" id="path308-1-2-9-6-3-6" />
-                <path
                     style="fill:#00e7a2;fill-opacity:0.365246;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                     d="m -66.546573,-366.40686 v 179.65248 h 7.78939 v 63.48809 h 43.27403 V -16.311966 H -154.75381 v -46.627411 h -63.36694 V -170.89704 h -322.63667 v 36.30227 h -191.85162 v -231.87329 z"
                     id="path18245" />

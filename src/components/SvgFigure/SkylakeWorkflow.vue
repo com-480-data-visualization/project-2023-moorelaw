@@ -41,7 +41,7 @@
                     </foreignObject><text x="2" y="524" fill="#333333" font-family="Helvetica" font-size="12px"></text>
                 </switch>
             </g>
-            <rect x="210" y="10" width="70" height="50" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="210" y="10" width="70" height="50" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_l1tlb"/>
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -53,7 +53,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">L1 ITLB</font>
+                                    <font
+                                        id="wf_font_2"
+                                        style="font-size: 15px;">L1 ITLB</font>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +63,7 @@
                         text-anchor="middle">L1 ITLB</text>
                 </switch>
             </g>
-            <rect x="280" y="10" width="170" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="280" y="10" width="170" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_l1icache" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -73,7 +75,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">L1 Instruction Cache</font>
+                                    <font 
+                                    id="wf_font_3"
+                                    style="font-size: 15px;">L1 Instruction Cache</font>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +85,7 @@
                         text-anchor="middle">L1 Instruction Cache</text>
                 </switch>
             </g>
-            <rect x="280" y="90" width="170" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="280" y="90" width="170" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" wf_instruction_queue />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -93,7 +97,7 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Instruction Queue</font>
+                                    <font id="wf_font_4" style="font-size: 15px;">Instruction Queue</font>
                                 </div>
                             </div>
                         </div>
@@ -101,8 +105,8 @@
                         text-anchor="middle">Instruction Queue</text>
                 </switch>
             </g>
-            <rect x="220" y="170" width="290" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
-            <rect x="225" y="180" width="70" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="220" y="170" width="290" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_decode" />
+            <rect x="225" y="180" width="70" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_decode_1" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -114,7 +118,7 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Decoder</font>
+                                    <font id="wf_font_5" style="font-size: 15px;">Decoder</font>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +126,7 @@
                         text-anchor="middle">Decoder</text>
                 </switch>
             </g>
-            <rect x="295" y="180" width="70" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="295" y="180" width="70" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_decode_2" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -134,7 +138,7 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Decoder</font>
+                                    <font id="wf_font_6" style="font-size: 15px;">Decoder</font>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +146,7 @@
                         text-anchor="middle">Decoder</text>
                 </switch>
             </g>
-            <rect x="365" y="180" width="70" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="365" y="180" width="70" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_decode_3" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -154,7 +158,7 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Decoder</font>
+                                    <font id="wf_font_7"  style="font-size: 15px;">Decoder</font>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +166,7 @@
                         text-anchor="middle">Decoder</text>
                 </switch>
             </g>
-            <rect x="435" y="180" width="70" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="435" y="180" width="70" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_decode_4" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -174,7 +178,7 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Decoder</font>
+                                    <font id="wf_font_8"  style="font-size: 15px;">Decoder</font>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +186,7 @@
                         text-anchor="middle">Decoder</text>
                 </switch>
             </g>
-            <rect x="510" y="170" width="85" height="50" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="510" y="170" width="85" height="50" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_microcode" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -194,7 +198,8 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Microcode</font>
+                                    <font id="wf_font_9" 
+                                    style="font-size: 15px;">Microcode</font>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +207,7 @@
                         text-anchor="middle">Microcode</text>
                 </switch>
             </g>
-            <rect x="280" y="250" width="170" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="280" y="250" width="170" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_micro_opqueue" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -214,7 +219,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Micro-Op Queue</font>
+                                    <font 
+                                    id="wf_font_11"
+                                    style="font-size: 15px;">Micro-Op Queue</font>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +229,7 @@
                         text-anchor="middle">Micro-Op Queue</text>
                 </switch>
             </g>
-            <rect x="10" y="250" width="150" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="10" y="250" width="150" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_micro_opcache" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -234,7 +241,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Micro-Op Cache</font>
+                                    <font 
+                                    id="wf_font_10"
+                                    style="font-size: 15px;">Micro-Op Cache</font>
                                 </div>
                             </div>
                         </div>
@@ -242,7 +251,7 @@
                         text-anchor="middle">Micro-Op Cache</text>
                 </switch>
             </g>
-            <rect x="10" y="330" width="590" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="10" y="330" width="590" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_reorder_buffer" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -254,12 +263,14 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Recorder Buffer</font>
+                                    <font 
+                                    id="wf_font_12"
+                                    style="font-size: 15px;">Reorder Buffer</font>
                                 </div>
                             </div>
                         </div>
                     </foreignObject><text x="305" y="359" fill="#333333" font-family="Helvetica" font-size="12px"
-                        text-anchor="middle">Recorder Buffer</text>
+                        text-anchor="middle">Reorder Buffer</text>
                 </switch>
             </g>
             <rect x="10" y="410" width="590" height="70" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
@@ -282,7 +293,7 @@
                         text-anchor="middle">OoO Resources...</text>
                 </switch>
             </g>
-            <rect x="30" y="440" width="180" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="30" y="440" width="180" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_integer_register_file" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -294,7 +305,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Integer Register File</font>
+                                    <font 
+                                    id="wf_font_13"
+                                    style="font-size: 15px;">Integer Register File</font>
                                 </div>
                             </div>
                         </div>
@@ -302,7 +315,7 @@
                         text-anchor="middle">Integer Register File</text>
                 </switch>
             </g>
-            <rect x="225" y="440" width="170" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="225" y="440" width="170" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_vector_register_file" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -314,7 +327,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Vector Register File</font>
+                                    <font
+                                     id="wf_font_14"
+                                     style="font-size: 15px;">Vector Register File</font>
                                 </div>
                             </div>
                         </div>
@@ -322,7 +337,7 @@
                         text-anchor="middle">Vector Register File</text>
                 </switch>
             </g>
-            <rect x="410" y="440" width="180" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="410" y="440" width="180" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_mmx_x87" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -334,7 +349,8 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">MMX / x87 Register File</font>
+                                    <font id="wf_font_15"
+                                    style="font-size: 15px;">MMX / x87 Register File</font>
                                 </div>
                             </div>
                         </div>
@@ -342,7 +358,7 @@
                         text-anchor="middle">MMX / x87 Register File</text>
                 </switch>
             </g>
-            <rect x="240" y="510" width="360" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="240" y="510" width="360" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_reservation_station" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -354,7 +370,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <span style="font-size: 15px;">Reservation Station</span>
+                                    <span 
+                                    id="wf_font_17"
+                                    style="font-size: 15px;">Reservation Station</span>
                                 </div>
                             </div>
                         </div>
@@ -362,7 +380,7 @@
                         text-anchor="middle">Reservation Station</text>
                 </switch>
             </g>
-            <rect x="9" y="510" width="223" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="9" y="510" width="223" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_agu_scheduler" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -374,7 +392,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <span style="font-size: 15px;">AGU Scheduler</span>
+                                    <span 
+                                    id="wf_font_16"
+                                    style="font-size: 15px;">AGU Scheduler</span>
                                 </div>
                             </div>
                         </div>
@@ -382,7 +402,7 @@
                         text-anchor="middle">AGU Scheduler</text>
                 </switch>
             </g>
-            <rect x="337" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="337" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_alu_1" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -394,7 +414,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">ALU</font>
+                                    <font 
+                                    id="wf_font_22"
+                                    style="font-size: 15px;">ALU</font>
                                 </div>
                             </div>
                         </div>
@@ -402,7 +424,7 @@
                         text-anchor="middle">ALU</text>
                 </switch>
             </g>
-            <rect x="337" y="620" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="337" y="620" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_branch_1" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -414,7 +436,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Branch</font>
+                                    <font 
+                                    id="wf_font_27"
+                                    style="font-size: 15px;">Branch</font>
                                 </div>
                             </div>
                         </div>
@@ -422,7 +446,7 @@
                         text-anchor="middle">Branch</text>
                 </switch>
             </g>
-            <rect x="337" y="650" width="60" height="30" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="337" y="650" width="60" height="30" fill="#f5f5f5" stroke="#666666"  pointer-events="all" id="wf_vfma_1" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -434,7 +458,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">V-FMA</font>
+                                    <font 
+                                    id="wf_font_30"
+                                    style="font-size: 15px;">V-FMA</font>
                                 </div>
                             </div>
                         </div>
@@ -442,7 +468,7 @@
                         text-anchor="middle">V-FMA</text>
                 </switch>
             </g>
-            <rect x="337" y="680" width="60" height="30" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="337" y="680" width="60" height="30" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_valu_1" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -454,7 +480,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">V-ALU</font>
+                                    <font 
+                                    id="wf_font_31"
+                                    style="font-size: 15px;">V-ALU</font>
                                 </div>
                             </div>
                         </div>
@@ -462,7 +490,7 @@
                         text-anchor="middle">V-ALU</text>
                 </switch>
             </g>
-            <rect x="404" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="404" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_alu_2" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -474,7 +502,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">ALU</font>
+                                    <font 
+                                    id="wf_font_23"
+                                    style="font-size: 15px;">ALU</font>
                                 </div>
                             </div>
                         </div>
@@ -482,7 +512,7 @@
                         text-anchor="middle">ALU</text>
                 </switch>
             </g>
-            <rect x="404" y="620" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="404" y="620" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_mul" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -494,7 +524,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">MUL</font>
+                                    <font 
+                                    id="wf_font_28"
+                                    style="font-size: 15px;">MUL</font>
                                 </div>
                             </div>
                         </div>
@@ -502,7 +534,7 @@
                         text-anchor="middle">MUL</text>
                 </switch>
             </g>
-            <rect x="404" y="650" width="60" height="30" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="404" y="650" width="60" height="30" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_vfma_2" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -514,7 +546,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">V-FMA</font>
+                                    <font 
+                                    id="wf_font_29"
+                                    style="font-size: 15px;">V-FMA</font>
                                 </div>
                             </div>
                         </div>
@@ -522,7 +556,7 @@
                         text-anchor="middle">V-FMA</text>
                 </switch>
             </g>
-            <rect x="404" y="680" width="60" height="30" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="404" y="680" width="60" height="30" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_valu_2" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -534,7 +568,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">V-ALU</font>
+                                    <font 
+                                    id="wf_font_32"
+                                    style="font-size: 15px;">V-ALU</font>
                                 </div>
                             </div>
                         </div>
@@ -542,7 +578,7 @@
                         text-anchor="middle">V-ALU</text>
                 </switch>
             </g>
-            <rect x="471" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="471" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_alu_3" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -554,7 +590,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">ALU</font>
+                                    <font 
+                                    id="wf_font_24"
+                                    style="font-size: 15px;">ALU</font>
                                 </div>
                             </div>
                         </div>
@@ -562,7 +600,7 @@
                         text-anchor="middle">ALU</text>
                 </switch>
             </g>
-            <rect x="471" y="620" width="60" height="30" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="471" y="620" width="60" height="30" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_valu_3" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -574,7 +612,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">V-ALU</font>
+                                    <font 
+                                    id="wf_font_33"
+                                    style="font-size: 15px;">V-ALU</font>
                                 </div>
                             </div>
                         </div>
@@ -582,7 +622,7 @@
                         text-anchor="middle">V-ALU</text>
                 </switch>
             </g>
-            <rect x="538" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="538" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_alu_4" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -594,7 +634,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">ALU</font>
+                                    <font 
+                                    id="wf_font_25"
+                                    style="font-size: 15px;">ALU</font>
                                 </div>
                             </div>
                         </div>
@@ -602,7 +644,7 @@
                         text-anchor="middle">ALU</text>
                 </switch>
             </g>
-            <rect x="538" y="620" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="538" y="620" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_branch_2" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -614,7 +656,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Branch</font>
+                                    <font 
+                                    id="wf_font_26"
+                                    style="font-size: 15px;">Branch</font>
                                 </div>
                             </div>
                         </div>
@@ -622,7 +666,7 @@
                         text-anchor="middle">Branch</text>
                 </switch>
             </g>
-            <rect x="239" y="590" width="90" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="239" y="590" width="90" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_store_data" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -634,7 +678,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Store Data</font>
+                                    <font
+                                    id="wf_font_21"
+                                    style="font-size: 15px;">Store Data</font>
                                 </div>
                             </div>
                         </div>
@@ -642,7 +688,7 @@
                         text-anchor="middle">Store Data</text>
                 </switch>
             </g>
-            <rect x="8" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="8" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_agu_1" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -654,7 +700,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">AGU</font>
+                                    <font 
+                                    id="wf_font_18"
+                                    style="font-size: 15px;">AGU</font>
                                 </div>
                             </div>
                         </div>
@@ -662,7 +710,7 @@
                         text-anchor="middle">AGU</text>
                 </switch>
             </g>
-            <rect x="75" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="75" y="590" width="60" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_agu_2" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -674,7 +722,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">AGU</font>
+                                    <font 
+                                    id="wf_font_19"
+                                    style="font-size: 15px;">AGU</font>
                                 </div>
                             </div>
                         </div>
@@ -682,7 +732,7 @@
                         text-anchor="middle">AGU</text>
                 </switch>
             </g>
-            <rect x="142" y="590" width="90" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="142" y="590" width="90" height="30" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_agu_store" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -694,7 +744,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Store AGU</font>
+                                    <font 
+                                    id="wf_font_20"
+                                    style="font-size: 15px;">Store AGU</font>
                                 </div>
                             </div>
                         </div>
@@ -702,7 +754,7 @@
                         text-anchor="middle">Store AGU</text>
                 </switch>
             </g>
-            <rect x="0" y="720" width="610" height="150" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="0" y="720" width="610" height="150" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_load_store" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -721,7 +773,7 @@
                     </foreignObject><text x="2" y="799" fill="#333333" font-family="Helvetica" font-size="12px"></text>
                 </switch>
             </g>
-            <rect x="9" y="810" width="70" height="50" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="9" y="810" width="70" height="50" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_l1_dtlb" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -732,6 +784,7 @@
                             <div data-drawio-colors="color: #333333; "
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
+                                    id="wf_font_37"
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
                                     <font style="font-size: 15px;">L1 DTLB</font>
                                 </div>
@@ -743,7 +796,7 @@
             </g>
             <path d="M 239.5 827.5 L 239.5 817.5 L 379.5 817.5 L 379.5 827.5 Z" fill="#fad7ac" stroke="none"
                 pointer-events="all" />
-            <rect x="79" y="810" width="160" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="79" y="810" width="160" height="50" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_l1_data_cache" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -755,7 +808,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">L1 Data Cache</font>
+                                    <font 
+                                    id="wf_font_38"
+                                    style="font-size: 15px;">L1 Data Cache</font>
                                 </div>
                             </div>
                         </div>
@@ -763,7 +818,7 @@
                         text-anchor="middle">L1 Data Cache</text>
                 </switch>
             </g>
-            <rect x="239" y="828" width="90" height="32" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="239" y="828" width="90" height="32" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_fill_buffer" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -775,7 +830,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Fill Buffers</font>
+                                    <font 
+                                    id="wf_font_39"
+                                    style="font-size: 15px;">Fill Buffers</font>
                                 </div>
                             </div>
                         </div>
@@ -783,7 +840,7 @@
                         text-anchor="middle">Fill Buffers</text>
                 </switch>
             </g>
-            <rect x="8" y="740" width="160" height="40" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="8" y="740" width="160" height="40" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_load_queue" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -795,7 +852,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <span style="font-size: 15px;">Load Queue</span>
+                                    <span 
+                                    id="wf_font_34"
+                                    style="font-size: 15px;">Load Queue</span>
                                 </div>
                             </div>
                         </div>
@@ -803,7 +862,7 @@
                         text-anchor="middle">Load Queue</text>
                 </switch>
             </g>
-            <rect x="179" y="740" width="150" height="40" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="179" y="740" width="150" height="40" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_store_queue" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -815,7 +874,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <span style="font-size: 15px;">Store Queue</span>
+                                    <span 
+                                    id="wf_font_35"
+                                    style="font-size: 15px;">Store Queue</span>
                                 </div>
                             </div>
                         </div>
@@ -855,16 +916,17 @@
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
                                     <span
+                                        id="wf_font_36"
                                         style="color: rgb(51, 51, 51); font-family: Helvetica; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Load
-                                        /Store</span>
+                                        / Store</span>
                                 </div>
                             </div>
                         </div>
                     </foreignObject><text x="603" y="859" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px"
-                        text-anchor="end">Load /Store</text>
+                        text-anchor="end">Load / Store</text>
                 </switch>
             </g>
-            <rect x="380" y="810" width="40" height="50" fill="#ffffff" stroke="#666666" pointer-events="all" />
+            <rect x="380" y="810" width="40" height="50" fill="#ffffff" stroke="#666666" pointer-events="all" id="wf_l2_tlb" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -876,7 +938,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">L2 TLB</font>
+                                    <font 
+                                    id="wf_font_40"
+                                    style="font-size: 15px;">L2 TLB</font>
                                 </div>
                             </div>
                         </div>
@@ -884,7 +948,7 @@
                         text-anchor="middle">L2 TLB</text>
                 </switch>
             </g>
-            <rect x="420" y="740" width="90" height="120" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="420" y="740" width="90" height="120" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_l2_cache" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -896,7 +960,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">L2 Cache</font>
+                                    <font 
+                                    id="wf_font_41"
+                                    style="font-size: 15px;">L2 Cache</font>
                                 </div>
                             </div>
                         </div>
@@ -1034,7 +1100,7 @@
             <path
                 d="M 204.72 780.5 L 214.72 780.5 L 214.72 796.5 L 225.22 796.5 L 209.72 809.5 L 194.22 796.5 L 204.72 796.5 Z"
                 fill="#fad7ac" stroke="none" pointer-events="all" />
-            <rect x="8" y="10" width="150" height="130" fill="#f5f5f5" stroke="#666666" pointer-events="all" />
+            <rect x="8" y="10" width="150" height="130" fill="#f5f5f5" stroke="#666666" pointer-events="all" id="wf_branch_predictor" />
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject pointer-events="none" width="100%" height="100%"
@@ -1046,7 +1112,9 @@
                                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
                                 <div
                                     style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                    <font style="font-size: 15px;">Branch Predictor</font>
+                                    <font 
+                                        id="wf_font_1" 
+                                        style="font-size: 15px;">Branch Predictor</font>
                                 </div>
                             </div>
                         </div>
