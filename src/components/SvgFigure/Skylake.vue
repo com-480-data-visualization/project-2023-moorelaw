@@ -1,7 +1,7 @@
 <template>
     <svg width="1625.6mm" height="997.47919mm" viewBox="0 0 1625.6 997.47919" version="1.1" id="svg8601">
         <defs id="defs8598" />
-        <image href="/public/figure/skylake-ori-xlarge.jpg" height="100%" width="100%"></image>
+        <image href="/figure/skylake-ori-xlarge.jpg" height="100%" width="100%"></image>
         <g id="layer1" transform="translate(733.48354,367.71016)">
             <g id="g18686" transform="matrix(-1,0,0,1,158.63293,1.0742187e-6)">
                 <path
