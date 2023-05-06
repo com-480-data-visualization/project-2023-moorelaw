@@ -7,8 +7,8 @@ import * as d3 from "d3";
 
 <template>
     <div class="flex-col h-9/10">
-        <h2 class="h-1/8 mt-10">Example: Intel Skylake (2015)</h2>
-        <div class="flex mt-5 w-7/8 mx-auto h-4/5">
+        <h2 class="h-1/10">Example: Intel Skylake (2015)</h2>
+        <div class="flex w-7/8 mx-auto h-9/10">
             <img src="/figure/skylake-workflow.drawio.svg" class="h-full">
             <Skylake class="h-full ml-10"></Skylake>
         </div>
