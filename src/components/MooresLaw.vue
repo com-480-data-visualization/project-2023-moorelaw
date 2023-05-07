@@ -4,9 +4,11 @@ import * as d3 from "d3";
 </script>
 
 <template>
-  <div class="section flex">
+  <div class="section flex text-center">
     <h1>Moore's Law</h1>
-    <svg id="sub_svg"></svg>
+    <!-- svg id="sub_svg"></svg -->
+    <img src="/public/figure/cpu-trend.svg" class="w-4/5">
+    <p class="">TODO: Repaint this figure with d3.js. </p>
   </div>
 </template>
 
