@@ -16,5 +16,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist # The folder the action should deploy.
-          token: {{ secrets.TOKEN_TO_DEPLOY_WEBPAGE }}
+          token: ${{ secrets.TOKEN_TO_DEPLOY_WEBPAGE }}
           repository-name: com-480-moorelaw/com-480-moorelaw.github.io
