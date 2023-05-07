@@ -1,4 +1,58 @@
+<script setup>
+
+import M2SoC from './SvgFigure/M2SoC.vue';
+
+</script>
+
 <template>
     <h1>Specialized Circuit Are Widely Used!</h1>
-    
+    <div class="flex mt-10 mb-10">
+        <div class="flex flex-col w-60 mx-40 items-start">
+            <div class="flex mt-10 justify-start " v-for="work in workloads">
+                <div :class="`${work.icon} w-20 h-20`"></div>
+                <p class="ml-5"> {{ work.name }} </p>
+            </div>
+        </div>
+        <M2SoC></M2SoC>
+    </div>
+    <p>TODO: Use d3.js to repaint this figure to show the component usage when each task is running. </p>
 </template>
+
+
+<script>
+
+export default {
+    data(){
+        return {
+            workloads: [
+                {
+                    name: "Coding",
+                    icon: "i-mdi-microsoft-visual-studio-code",
+                    active_region: "CPU"
+                },
+                {
+                    name: "Gaming",
+                    icon: "i-mdi-gamepad-square",
+                    active_region: "CPU, GPU"
+                },
+                {
+                    name: "Face Recognition",
+                    icon: 'i-mdi-face-recognition',
+                    active_region: "NPU, Security"
+                },
+                {
+                    name: "Video",
+                    icon: "i-mdi-film",
+                    active_region: "CPU, GPU, Media"
+                },
+                {
+                    name: "Password",
+                    icon: "i-mdi-form-textbox-password",
+                    active_region: "Security"
+                }
+            ]
+        }
+    }
+}
+
+</script>
