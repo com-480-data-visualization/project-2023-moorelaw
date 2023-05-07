@@ -1,6 +1,6 @@
 <template>
     <div class="section flex bg1">
-        <div class="text-8xl text-orange-100 text-shadow+ leading-loose">Moore's law</div>
+        <div class="text-8xl text-orange-100 text-shadow+ leading-loose">Moore's Law</div>
     </div>
     <p class="annotate1 absolute">The journey of semiconductor and CPU performance growing</p>
 </template>
