@@ -10,7 +10,7 @@ import M2SoC from './SvgFigure/M2SoC.vue';
         <div class="flex flex-col w-60 mx-40 items-start">
             <div class="flex mt-10 justify-start " v-for="work in workloads">
                 <div :class="`${work.icon} w-20 h-20`"></div>
-                <p class="ml-5"> {{ work.name }} </p>
+                <p class="ml-5 text-left"> {{ work.name }} </p>
             </div>
         </div>
         <M2SoC></M2SoC>
