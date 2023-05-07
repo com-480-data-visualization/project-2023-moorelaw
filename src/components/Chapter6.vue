@@ -22,7 +22,6 @@
 
 <style scoped>
 
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital@1&display=swap');
 
 .quote {
