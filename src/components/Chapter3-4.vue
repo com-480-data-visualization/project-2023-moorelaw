@@ -35,14 +35,20 @@ export default {
                     "path308-9-7-1", // Op cach Related Banch Prediction?
                 ],
                 description: "Branch Predictor",
+                color: [
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
-                    "wf_font_2",
                     "wf_l1tlb",
+                    "wf_font_2",
                     "path308-1", // ITLB?
                 ],
                 description: "L1 ITLB",
+                color: [
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -52,6 +58,9 @@ export default {
                     "path308-2-3", // L1i Cache
                 ],
                 description: "L1 Instruction Cache",
+                color: [
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -61,6 +70,9 @@ export default {
                     "path308-1-2", // Instruction Queue?
                 ],
                 description: "Instruction Queue",
+                color: [
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -78,6 +90,13 @@ export default {
                     "path11846",
                 ],
                 description: "Decode",
+                color: [
+                    "#f5f5f5",
+                    "#ffffff",
+                    "#ffffff",
+                    "#ffffff",
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -86,6 +105,9 @@ export default {
                     "path308-2-1-9", // MSROM?
                 ],
                 description: "Microcode",
+                color: [
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -96,6 +118,9 @@ export default {
                     "path308-2-3-6-4", // Op Cache
                 ],
                 description: "Micro-Op Cache",
+                color: [
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -104,6 +129,9 @@ export default {
                     "path308-9-7-1-8", // Decoded Instruction Queue?
                 ],
                 description: "Micro-Op Queue",
+                color: [
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -112,6 +140,9 @@ export default {
                     "path18245", // Backend
                 ],
                 description: "Reorder Buffer",
+                color: [
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -131,6 +162,12 @@ export default {
                     "path308-1-2-5", // MMX / x87 Register File
                 ],
                 description: "OoO Resources",
+                color: [
+                    "#f5f5f5",
+                    "#ffffff",
+                    "#ffffff",
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -139,6 +176,9 @@ export default {
                     "path308-2-1-8", // Integer Register File
                 ],
                 description: "Integer Register File",
+                color: [
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -150,6 +190,9 @@ export default {
                     "path308-2-9-5-5-4", // Extends Vector RF to 512 bits on SKL-X
                 ],
                 description: "Vector Register File",
+                color: [
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -158,6 +201,9 @@ export default {
                     "path308-1-2-5", // MMX / x87 Register File
                 ],
                 description: "MMX / x87 Register File",
+                color: [
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -166,6 +212,9 @@ export default {
                     "path308-2-3-6-4-1", // Reservation Station for Ports 2, 3, 7 (AGUs)?
                 ],
                 description: "AGU Scheduler",
+                color: [
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -174,6 +223,9 @@ export default {
                     "path308-2-36-5", // Reservation Station for Ports 0, 1, 4, 5, 6?
                 ],
                 description: "Reservation Station",
+                color: [
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -186,6 +238,11 @@ export default {
                     "path308-2-3-6-4-1-9", // AGUs
                 ],
                 description: "AGU",
+                color: [
+                    "#ffffff",
+                    "#ffffff",
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -194,6 +251,9 @@ export default {
                     "path308-1-2-9-6-3", // Store Data Buffer
                 ],
                 description: "Store Data",
+                color: [
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -212,6 +272,14 @@ export default {
                     "path308-2-36-7", // Integer ALUs
                 ],
                 description: "Integer ALUs",
+                color: [
+                    "#ffffff",
+                    "#ffffff",
+                    "#ffffff",
+                    "#ffffff",
+                    "#ffffff",
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -220,6 +288,9 @@ export default {
                     "path308-2-9-5-5-45", // Integer Multiply and Divide
                 ],
                 description: "MUL",
+                color: [
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -234,6 +305,10 @@ export default {
                     "path308-1-2-9-6-3-8", // x87 Execution?
                 ],
                 description: "Vectored FP MA",
+                color: [
+                    "#f5f5f5",
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -250,6 +325,11 @@ export default {
                     "path308-2-36-5-7", // Mystery Vector Execution Units Duplicated 4x?
                 ],
                 description: "Vectored ALUs",
+                color: [
+                    "#f5f5f5",
+                    "#f5f5f5",
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -258,6 +338,9 @@ export default {
                     "path308-2-36", // Load Queue?
                 ],
                 description: "Load Queue",
+                color: [
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -266,6 +349,9 @@ export default {
                     "path308-2-9-5", // Store Queue?
                 ],
                 description: "Store Queue",
+                color: [
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -274,6 +360,9 @@ export default {
                     "path13460", // Load Store Unit
                 ],
                 description: "Load / Store",
+                color: [
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -284,6 +373,10 @@ export default {
                     "path308-1-2-9-6", // L1D Cache
                 ],
                 description: "L1 DTLB and L1 Data Cache",
+                color: [
+                    "#ffffff",
+                    "#f5f5f5",
+                ],
             },
             {
                 highlight_region: [
@@ -292,6 +385,9 @@ export default {
                     "path15132", // Fill Buffers?
                 ],
                 description: "Fill Buffers",
+                color: [
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -300,6 +396,9 @@ export default {
                     "path12705", // L2 TLB
                 ],
                 description: "L2 TLB",
+                color: [
+                    "#ffffff",
+                ],
             },
             {
                 highlight_region: [
@@ -310,74 +409,110 @@ export default {
                     "path308-2-10-3", // L2 Cache
                 ],
                 description: "L2 Cache",
+                color: [
+                    "#f5f5f5",
+                ],
             },
         ]
 
         for (let i=0; i<hover_info.length; i++) {
             for (let j=0; j<hover_info[i].highlight_region.length; j++) {
-                d3.select("#"+hover_info[i].highlight_region[j])
+                let hover_item = "#" + hover_info[i].highlight_region[j]
+
+                if (hover_item.startsWith("#path")) {  // in the dieshot
+                    d3.select(hover_item)        
+                    .style("opacity", "0")
                     .on('mouseover', function (d, n) {
                         for (let k=0; k<hover_info[i].highlight_region.length; k++) {
-                            d3.select("#"+hover_info[i].highlight_region[k])
-                                .transition()
-                                .duration('100')
-                                .style('opacity', '1');
+                            let related_item = "#"+hover_info[i].highlight_region[k]
+                            if (related_item.startsWith("#path")){  // in the dieshot, show up
+                                d3.select(related_item)
+                                    .transition()
+                                    .duration('100')
+                                    .style('opacity', '1');
+                            }
+                            else if(related_item.startsWith("#wf_font")){  // fonts in the workflow, do nothing
+                                
+                            }
+                            else {  // blocks in the workflow, change color TODO
+                                d3.select(related_item)
+                                    .transition()
+                                    .duration('100')
+                                    // .style("fill", "#5c88da");
+                                    // .style("fill", "#9faee5");
+                                    // .style("fill", "#7ba4db");
+                                    // .style("fill", "#89abe3");
+                                    .style("fill", "#89abe3");
+                            }
                         }
                     })
                     .on('mouseout', function (d, n) {
                         for (let k=0; k<hover_info[i].highlight_region.length; k++) {
-                            d3.select("#"+hover_info[i].highlight_region[k])
-                                .transition()
-                                .duration('100')
-                                .style('opacity', '0');
+                            let related_item = "#"+hover_info[i].highlight_region[k]
+                            if (related_item.startsWith("#path")){  // in the dieshot, show up
+                                d3.select(related_item)
+                                    .transition()
+                                    .duration('100')
+                                    .style('opacity', '0');
+                            }
+                            else if(related_item.startsWith("#wf_font")){  // fonts in the workflow, do nothing
+                                
+                            }
+                            else {  // blocks in the workflow, change color back TODO
+                                d3.select(related_item)
+                                    .transition()
+                                    .duration('100')
+                                    .style("fill", hover_info[i].color[k]);
+                            }
                         }
                     });
+                }
+                else {  // fonts and blocks in the workflow
+                    d3.select(hover_item)        
+                    .on('mouseover', function (d, n) {
+                        for (let k=0; k<hover_info[i].highlight_region.length; k++) {
+                            let related_item = "#"+hover_info[i].highlight_region[k]
+                            if (related_item.startsWith("#path")){  // in the dieshot, show up
+                                d3.select(related_item)
+                                    .transition()
+                                    .duration('100')
+                                    .style('opacity', '1');
+                            }
+                            else if(!related_item.startsWith("#wf_font")){  // fonts in the workflow, do nothing
+                                // blocks in the workflow, change color TODO
+                                d3.select(related_item)
+                                    .transition()
+                                    .duration('100')
+                                    // .style("fill", "#5c88da");
+                                    // .style("fill", "#9faee5");
+                                    .style("fill", "#7ba4db");
+                            }
+                        }
+                    })
+                    .on('mouseout', function (d, n) {
+                        let m = 0;
+                        for (let k=0; k<hover_info[i].highlight_region.length; k++) {
+                            let related_item = "#"+hover_info[i].highlight_region[k]
+                            if (related_item.startsWith("#path")){  // in the dieshot, show up
+                                d3.select(related_item)
+                                    .transition()
+                                    .duration('100')
+                                    .style('opacity', '0');
+                            }
+                            else if(!related_item.startsWith("#wf_font")){  // fonts in the workflow, do nothing
+                                // blocks in the workflow, change color back TODO
+                                d3.select(related_item)
+                                    .transition()
+                                    .duration('100')
+                                    .style("fill", hover_info[i].color[m]);
+                                m++;
+                            }
+                        }
+                    });
+
+                }
             }
         }
-
-        // d3.select(workflow_arr[0])
-        //     .on('mouseover', function (d, i) {
-        //         d3.select(workflow_arr[0])
-        //             .transition()
-        //             .duration('100')
-        //             .style('opacity', '1');
-        //         d3.select(dieshot_arr[0])
-        //             .transition()
-        //             .duration('300')
-        //             .style('opacity', '1');
-        //     })
-        //     .on('mouseout', function (d, i) {
-        //         d3.select(workflow_arr[0])
-        //             .transition()
-        //             .duration('300')
-        //             .style('opacity', '0');
-        //         d3.select(dieshot_arr[0])
-        //             .transition()
-        //             .duration('100')
-        //             .style('opacity', '0');
-        //     });
-
-        // d3.select("#path308-2-3-2")
-        //     .on('mouseover', function (d, i) {
-        //         d3.select('#path18245')
-        //             .transition()
-        //             .duration('300')
-        //             .style('opacity', '1');
-        //         d3.select("#path308-2-3-2")
-        //             .transition()
-        //             .duration('300')
-        //             .style('opacity', '1');
-        //     })
-        //     .on('mouseout', function (d, i) {
-        //         d3.select('#path18245')
-        //             .transition()
-        //             .duration('300')
-        //             .style('opacity', '0');
-        //         d3.select("#path308-2-3-2")
-        //             .transition()
-        //             .duration('300')
-        //             .style('opacity', '0');
-        //     });
     }
 }
 </script>

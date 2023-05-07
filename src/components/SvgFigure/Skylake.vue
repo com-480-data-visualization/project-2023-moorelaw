@@ -6,7 +6,8 @@
             <g id="g18686" transform="matrix(-1,0,0,1,158.63293,1.0742187e-6)">
                 <path
                     style="fill:#005be7;fill-opacity:0.365246;stroke:none;stroke-width:0.860722px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                    d="m -163.56459,326.90682 h -85.68729 -7.81267 v 241.41126 h 94.12017 z" id="path308-2-9-4" />
+                    d="m -163.56459,326.90682 h -85.68729 -7.81267 v 241.41126 h 94.12017 z" 
+                    id="path308-2-9-4" />
                 <path
                     style="fill:#005be7;fill-opacity:0.365246;stroke:none;stroke-width:0.860722px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                     d="m -295.41876,326.4306 h -85.68729 -7.81267 v 241.41126 h 94.12017 z" id="path308-2-9-4-4" />
