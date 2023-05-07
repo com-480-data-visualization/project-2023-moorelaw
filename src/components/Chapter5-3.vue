@@ -5,7 +5,7 @@ import M2SoC from './SvgFigure/M2SoC.vue';
 </script>
 
 <template>
-    <h1>Specialized Circuit Are Widely Used!</h1>
+    <h1>Specialized Circuits Are Widely Used!</h1>
     <div class="flex mt-10 mb-10">
         <div class="flex flex-col w-60 mx-40 items-start">
             <div class="flex mt-10 justify-start " v-for="work in workloads">
