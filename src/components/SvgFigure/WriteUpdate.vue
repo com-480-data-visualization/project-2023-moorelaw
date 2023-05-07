@@ -1,0 +1,180 @@
+<template>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="401px"
+        height="321px" viewBox="-0.5 -0.5 401 321" style="background-color: rgb(255, 255, 255);">
+        <defs />
+        <g>
+            <path d="M 144 120 L 144 200" fill="none" stroke="#6c8ebf" stroke-miterlimit="10" pointer-events="stroke" />
+            <path d="M 144 200 L 149.5 189" fill="none" stroke="#6c8ebf" stroke-miterlimit="10" pointer-events="all" />
+            <path d="M 157.14 111.14 L 248.86 202.86" fill="none" stroke="#6c8ebf" stroke-miterlimit="10"
+                pointer-events="stroke" />
+            <path d="M 248.86 202.86 L 244.97 191.19" fill="none" stroke="#6c8ebf" stroke-miterlimit="10"
+                pointer-events="all" />
+            <ellipse cx="140" cy="100" rx="20" ry="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="139.5"
+                    y="104.5">Core</text></g>
+            <ellipse cx="260" cy="100" rx="20" ry="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="259.5"
+                    y="104.5">Core</text></g>
+            <ellipse cx="260" cy="220" rx="20" ry="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="259.5"
+                    y="224.5">Core</text></g>
+            <ellipse cx="140" cy="220" rx="20" ry="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="139.5"
+                    y="224.5">Core</text></g>
+            <rect x="60" y="0" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="89.5"
+                    y="14.5">Data</text></g>
+            <rect x="0" y="0" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="29.5"
+                    y="14.5">Addr</text></g>
+            <rect x="0" y="20" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="29.5"
+                    y="34.5">....</text></g>
+            <rect x="60" y="20" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="89.5"
+                    y="34.5">....</text></g>
+            <rect x="0" y="40" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="29.5"
+                    y="54.5">0x100</text></g>
+            <rect x="60" y="40" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="89.5"
+                    y="54.5">0x5</text></g>
+            <rect x="0" y="60" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="29.5"
+                    y="74.5">....</text></g>
+            <rect x="60" y="60" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="89.5"
+                    y="74.5">....</text></g>
+            <rect x="340" y="0" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="369.5"
+                    y="14.5">Data</text></g>
+            <rect x="280" y="0" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="309.5"
+                    y="14.5">Addr</text></g>
+            <rect x="280" y="20" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="309.5"
+                    y="34.5">....</text></g>
+            <rect x="340" y="20" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="369.5"
+                    y="34.5">....</text></g>
+            <rect x="280" y="40" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="309.5"
+                    y="54.5">0x100</text></g>
+            <rect x="340" y="40" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="369.5"
+                    y="54.5" fill="red">0x5</text></g>
+            <rect x="280" y="60" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="309.5"
+                    y="74.5">....</text></g>
+            <rect x="340" y="60" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="369.5"
+                    y="74.5">....</text></g>
+            <rect x="60" y="240" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="89.5"
+                    y="254.5">Data</text></g>
+            <rect x="0" y="240" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="29.5"
+                    y="254.5">Addr</text></g>
+            <rect x="0" y="260" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="29.5"
+                    y="274.5">....</text></g>
+            <rect x="60" y="260" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="89.5"
+                    y="274.5">....</text></g>
+            <rect x="0" y="280" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="29.5"
+                    y="294.5">0x100</text></g>
+            <rect x="60" y="280" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="89.5"
+                    y="294.5" fill="red">0x5</text></g>
+            <rect x="0" y="300" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="29.5"
+                    y="314.5">....</text></g>
+            <rect x="60" y="300" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="89.5"
+                    y="314.5">....</text></g>
+            <rect x="340" y="240" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="369.5"
+                    y="254.5">Data</text></g>
+            <rect x="280" y="240" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="309.5"
+                    y="254.5">Addr</text></g>
+            <rect x="280" y="260" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="309.5"
+                    y="274.5">....</text></g>
+            <rect x="340" y="260" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="369.5"
+                    y="274.5">....</text></g>
+            <rect x="280" y="280" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="309.5"
+                    y="294.5">....</text></g>
+            <rect x="340" y="280" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="369.5"
+                    y="294.5">....</text></g>
+            <rect x="280" y="300" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="309.5"
+                    y="314.5">....</text></g>
+            <rect x="340" y="300" width="60" height="20" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"
+                pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="369.5"
+                    y="314.5">....</text></g>
+            <rect x="30" y="80" width="60" height="30" fill="none" stroke="none" pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="59.5"
+                    y="99.5">Cache</text></g>
+            <rect x="310" y="80" width="60" height="30" fill="none" stroke="none" pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="339.5"
+                    y="99.5">Cache</text></g>
+            <rect x="310" y="210" width="60" height="30" fill="none" stroke="none" pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="339.5"
+                    y="229.5">Cache</text></g>
+            <rect x="30" y="210" width="60" height="30" fill="none" stroke="none" pointer-events="all" />
+            <g fill="rgb(0, 0, 0)"  text-anchor="middle" font-size="12px"><text x="59.5"
+                    y="229.5">Cache</text></g>
+            <path d="M 135.94 200 L 135.94 120" fill="none" stroke="#6c8ebf" stroke-miterlimit="10"
+                pointer-events="stroke" />
+            <path d="M 135.94 120 L 130.44 131" fill="none" stroke="#6c8ebf" stroke-miterlimit="10" pointer-events="all" />
+            <path d="M 242.86 208.86 L 151.14 117.14" fill="none" stroke="#666666" stroke-miterlimit="10"
+                pointer-events="stroke" />
+            <path d="M 151.14 117.14 L 155.03 128.81" fill="none" stroke="#666666" stroke-miterlimit="10"
+                pointer-events="all" />
+            <path d="M 160 97 L 240 97" fill="none" stroke="#6c8ebf" stroke-miterlimit="10" pointer-events="stroke" />
+            <path d="M 240 97 L 229 91.5" fill="none" stroke="#6c8ebf" stroke-miterlimit="10" pointer-events="all" />
+            <path d="M 240 103 L 160 103" fill="none" stroke="#6c8ebf" stroke-miterlimit="10" pointer-events="stroke" />
+            <path d="M 160 103 L 171 108.5" fill="none" stroke="#6c8ebf" stroke-miterlimit="10" pointer-events="all" />
+        </g>
+    </svg>
+</template>

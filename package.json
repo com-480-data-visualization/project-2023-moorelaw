@@ -1,0 +1,23 @@
+{
+  "name": "moorelaw",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "d3": "^7.8.4",
+    "vue": "^3.2.47",
+    "vue-fullpage.js": "^0.2.13"
+  },
+  "devDependencies": {
+    "@iconify-json/mdi": "^1.1.50",
+    "@unocss/preset-icons": "^0.51.12",
+    "@unocss/transformer-directives": "^0.51.8",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "unocss": "^0.51.8",
+    "vite": "^4.1.4"
+  }
+}

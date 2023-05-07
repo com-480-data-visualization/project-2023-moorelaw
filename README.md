@@ -69,6 +69,10 @@ We take inspiration from the visualization project about [wine](https://github.c
 
 **10% of the final grade**
 
+For the project goal, please check [here](./m2.md).
+
+For the functional prototype, please visit https://com-480-moorelaw.github.io/ 
+
 
 ## Milestone 3 (4th June, 5pm)
 

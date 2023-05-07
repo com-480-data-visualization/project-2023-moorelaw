@@ -1,0 +1,30 @@
+@import './base.css';
+
+.slide {
+  text-align: center;
+}
+
+.fp-watermark {
+  display: none;
+}
+
+.fp-arrow {
+  display: none;
+}
+
+.fp-slidesNav.fp-bottom {
+  bottom: 1%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40pt;
+}
+
+h2 {
+  font-size: 30pt;
+}
+
+p, li, label {
+  @apply text-xl;
+}
