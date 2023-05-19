@@ -9,7 +9,7 @@ import * as d3 from "d3";
 <template>
     <div class="flex-col h-9/10 mt-1/30">
         <h2 class="h-1/10 mb-1/80">Example: Intel Skylake (2015)</h2>
-        <div class="flex w-7/8 mx-auto h-8/10">
+        <div id="whole_panel" class="flex w-7/8 mx-auto h-8/10">
             <SkylakeWorkflow class="h-full flex-shrink-0"></SkylakeWorkflow>
             <Skylake class="h-full ml-10 flex-shrink"></Skylake>
         </div>
@@ -415,100 +415,136 @@ export default {
             },
         ]
 
-        for (let i=0; i<hover_info.length; i++) {
-            for (let j=0; j<hover_info[i].highlight_region.length; j++) {
+        let text_tooltip = d3.select("html")
+            .append("div")
+            .style("position", "absolute")
+            .style("opacity", 0)
+            .attr("class", "tooltip")
+            .style("background-color", "white")
+            .style("border", "solid")
+            .style("border-width", "2px")
+            .style("border-radius", "5px")
+            .style("padding", "5px")
+
+
+        for (let i = 0; i < hover_info.length; i++) {
+            for (let j = 0; j < hover_info[i].highlight_region.length; j++) {
                 let hover_item = "#" + hover_info[i].highlight_region[j]
 
                 if (hover_item.startsWith("#path")) {  // in the dieshot
-                    d3.select(hover_item)        
-                    .style("opacity", "0")
-                    .on('mouseover', function (d, n) {
-                        for (let k=0; k<hover_info[i].highlight_region.length; k++) {
-                            let related_item = "#"+hover_info[i].highlight_region[k]
-                            if (related_item.startsWith("#path")){  // in the dieshot, show up
-                                d3.select(related_item)
-                                    .transition()
-                                    .duration('100')
-                                    .style('opacity', '1');
+                    d3.select(hover_item)
+                        .style("opacity", "0")
+                        .on('mouseover', function (d, n) {
+                            text_tooltip
+                                .style("opacity", 1)
+                                .text(hover_info[i].description)
+                            for (let k = 0; k < hover_info[i].highlight_region.length; k++) {
+                                let related_item = "#" + hover_info[i].highlight_region[k]
+                                if (related_item.startsWith("#path")) {  // in the dieshot, show up
+                                    d3.select(related_item)
+                                        .transition()
+                                        .duration('100')
+                                        .style('opacity', '1');
+                                }
+                                else if (related_item.startsWith("#wf_font")) {  // fonts in the workflow, do nothing
+
+                                }
+                                else {  // blocks in the workflow, change color TODO
+                                    d3.select(related_item)
+                                        .transition()
+                                        .duration('100')
+                                        // .style("fill", "#5c88da");
+                                        // .style("fill", "#9faee5");
+                                        // .style("fill", "#7ba4db");
+                                        // .style("fill", "#89abe3");
+                                        .style("fill", "#89abe3");
+                                }
                             }
-                            else if(related_item.startsWith("#wf_font")){  // fonts in the workflow, do nothing
-                                
+                        })
+                        .on('mouseout', function (d, n) {
+                            text_tooltip
+                                .style("opacity", 0)
+                            for (let k = 0; k < hover_info[i].highlight_region.length; k++) {
+                                let related_item = "#" + hover_info[i].highlight_region[k]
+                                if (related_item.startsWith("#path")) {  // in the dieshot, show up
+                                    d3.select(related_item)
+                                        .transition()
+                                        .duration('100')
+                                        .style('opacity', '0');
+                                }
+                                else if (related_item.startsWith("#wf_font")) {  // fonts in the workflow, do nothing
+
+                                }
+                                else {  // blocks in the workflow, change color back TODO
+                                    d3.select(related_item)
+                                        .transition()
+                                        .duration('100')
+                                        .style("fill", hover_info[i].color[k]);
+                                }
                             }
-                            else {  // blocks in the workflow, change color TODO
-                                d3.select(related_item)
-                                    .transition()
-                                    .duration('100')
-                                    // .style("fill", "#5c88da");
-                                    // .style("fill", "#9faee5");
-                                    // .style("fill", "#7ba4db");
-                                    // .style("fill", "#89abe3");
-                                    .style("fill", "#89abe3");
-                            }
-                        }
-                    })
-                    .on('mouseout', function (d, n) {
-                        for (let k=0; k<hover_info[i].highlight_region.length; k++) {
-                            let related_item = "#"+hover_info[i].highlight_region[k]
-                            if (related_item.startsWith("#path")){  // in the dieshot, show up
-                                d3.select(related_item)
-                                    .transition()
-                                    .duration('100')
-                                    .style('opacity', '0');
-                            }
-                            else if(related_item.startsWith("#wf_font")){  // fonts in the workflow, do nothing
-                                
-                            }
-                            else {  // blocks in the workflow, change color back TODO
-                                d3.select(related_item)
-                                    .transition()
-                                    .duration('100')
-                                    .style("fill", hover_info[i].color[k]);
-                            }
-                        }
-                    });
+                        })
+                        .on('mousemove', function (event) {
+                            console.log("mousemove")
+                            text_tooltip
+                                .style("left",  `${event.pageX + 20}px`)
+                                .style("top", `${event.pageY + 20}px`)
+                        })
+                        ;
                 }
                 else {  // fonts and blocks in the workflow
-                    d3.select(hover_item)        
-                    .on('mouseover', function (d, n) {
-                        for (let k=0; k<hover_info[i].highlight_region.length; k++) {
-                            let related_item = "#"+hover_info[i].highlight_region[k]
-                            if (related_item.startsWith("#path")){  // in the dieshot, show up
-                                d3.select(related_item)
-                                    .transition()
-                                    .duration('100')
-                                    .style('opacity', '1');
+                    d3.select(hover_item)
+                        .on('mouseover', function (d, n) {
+                            text_tooltip
+                                .style("opacity", 1)
+                                .text(hover_info[i].description)
+                            for (let k = 0; k < hover_info[i].highlight_region.length; k++) {
+                                let related_item = "#" + hover_info[i].highlight_region[k]
+                                if (related_item.startsWith("#path")) {  // in the dieshot, show up
+                                    d3.select(related_item)
+                                        .transition()
+                                        .duration('100')
+                                        .style('opacity', '1');
+                                }
+                                else if (!related_item.startsWith("#wf_font")) {  // fonts in the workflow, do nothing
+                                    // blocks in the workflow, change color TODO
+                                    d3.select(related_item)
+                                        .transition()
+                                        .duration('100')
+                                        // .style("fill", "#5c88da");
+                                        // .style("fill", "#9faee5");
+                                        .style("fill", "#7ba4db");
+                                }
                             }
-                            else if(!related_item.startsWith("#wf_font")){  // fonts in the workflow, do nothing
-                                // blocks in the workflow, change color TODO
-                                d3.select(related_item)
-                                    .transition()
-                                    .duration('100')
-                                    // .style("fill", "#5c88da");
-                                    // .style("fill", "#9faee5");
-                                    .style("fill", "#7ba4db");
+                        })
+                        .on('mouseout', function (d, n) {
+                            text_tooltip
+                                .style("opacity", 0)
+                            let m = 0;
+                            for (let k = 0; k < hover_info[i].highlight_region.length; k++) {
+                                let related_item = "#" + hover_info[i].highlight_region[k]
+                                if (related_item.startsWith("#path")) {  // in the dieshot, show up
+                                    d3.select(related_item)
+                                        .transition()
+                                        .duration('100')
+                                        .style('opacity', '0');
+                                }
+                                else if (!related_item.startsWith("#wf_font")) {  // fonts in the workflow, do nothing
+                                    // blocks in the workflow, change color back TODO
+                                    d3.select(related_item)
+                                        .transition()
+                                        .duration('100')
+                                        .style("fill", hover_info[i].color[m]);
+                                    m++;
+                                }
                             }
-                        }
-                    })
-                    .on('mouseout', function (d, n) {
-                        let m = 0;
-                        for (let k=0; k<hover_info[i].highlight_region.length; k++) {
-                            let related_item = "#"+hover_info[i].highlight_region[k]
-                            if (related_item.startsWith("#path")){  // in the dieshot, show up
-                                d3.select(related_item)
-                                    .transition()
-                                    .duration('100')
-                                    .style('opacity', '0');
-                            }
-                            else if(!related_item.startsWith("#wf_font")){  // fonts in the workflow, do nothing
-                                // blocks in the workflow, change color back TODO
-                                d3.select(related_item)
-                                    .transition()
-                                    .duration('100')
-                                    .style("fill", hover_info[i].color[m]);
-                                m++;
-                            }
-                        }
-                    });
+                        })
+                        .on('mousemove', function (event) {
+                            console.log("mousemove")
+                            text_tooltip
+                                .style("left",  `${event.pageX + 20}px`)
+                                .style("top", `${event.pageY + 20}px`)
+                        })
+                        ;
 
                 }
             }
