@@ -32,7 +32,7 @@ import Chapter23 from './Chapter2-3.vue';
                     <p class="pt-10">Please move to right to see more detail.</p>
 
                 </div>
-                <img src="/public/figure/first_transistor.webp" class="ml-20">
+                <img src="/figure/first_transistor.webp" class="ml-20">
             </div>
 
         </div>
