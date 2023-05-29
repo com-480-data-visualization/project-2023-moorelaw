@@ -1,10 +1,3 @@
-<!--
-    This figure should be repainted to be interactive.
-    The original figure is from wikipedia. 
-    Possible interactive way:
--->
-
-
 <script setup>
 
 import * as d3 from "d3";

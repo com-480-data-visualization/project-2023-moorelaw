@@ -8,7 +8,6 @@ import OrGate from "./SvgFigure/OrGate.vue";
 
 <template>
     <h1>From Transistor to Logic</h1>
-    <p>TODO: Make the circuit interactive, i.e., clicking the input and observe the value change</p>
     <div class="flex my-20">
         <div class="flex-col mx-15">
             <NotGate class="h-100"></NotGate>
