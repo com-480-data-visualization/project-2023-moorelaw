@@ -36,7 +36,7 @@ import Chapter23 from './Chapter2-3.vue';
             </div>
 
         </div>
-        <div class="slide">
+        <div class="slide flex">
             <Chapter21></Chapter21>
         </div>
         <div class="slide flex">
