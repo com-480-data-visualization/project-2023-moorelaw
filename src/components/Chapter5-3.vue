@@ -28,27 +28,37 @@ export default {
                 {
                     name: "Texting",
                     icon: "i-mdi-file-document-edit",
-                    active_region: "CPU"
+                    active_region: [
+                        "eCPU", "IO"
+                    ]
                 },
                 {
                     name: "Gaming",
                     icon: "i-mdi-gamepad-square",
-                    active_region: "CPU, GPU"
+                    active_region: [
+                        "pCPU", "GPU", "IO"
+                    ]
                 },
                 {
                     name: "Face Recognition",
                     icon: 'i-mdi-face-recognition',
-                    active_region: "NPU, Security"
+                    active_region: [
+                        "eCPU", "NPU", "SEC"
+                    ]
                 },
                 {
                     name: "Video",
                     icon: "i-mdi-film",
-                    active_region: "CPU, GPU, Media"
+                    active_region: [
+                        "eCPU", "MPU", "GPU", "IO"
+                    ]
                 },
                 {
                     name: "Password",
                     icon: "i-mdi-form-textbox-password",
-                    active_region: "Security"
+                    active_region: [
+                        "eCPU", "SEC"
+                    ]
                 }
             ]
         }
