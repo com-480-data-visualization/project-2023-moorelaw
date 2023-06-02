@@ -29,8 +29,6 @@ import WriteUpdate from './SvgFigure/WriteUpdate.vue';
 
             <WriteInvald v-if="coherence_type == 'write_invalid'" class="w-2/3 h-2/3"></WriteInvald>
             <WriteUpdate v-if="coherence_type == 'write_update'" class="w-2/3 h-2/3"></WriteUpdate>
-
-            <p class="mt-5">TODO: Repaint this figure with d3.js and add animation</p>
         </div>
     </div>
 </template>
