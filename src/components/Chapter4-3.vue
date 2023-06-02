@@ -12,7 +12,6 @@
         </div>
 
         <div class="flex mt-10">
-
             <div class="w-3/5 mr-20">
                 <p> {{ topologies[selected_index].text }} </p>
                 <p class="mt-5">Main property: </p>
@@ -23,26 +22,28 @@
                     <li>Typical core count: {{ topologies[selected_index].typical_core_count }}</li>
                 </ul>
             </div>
-
-
-
-            <img :src="topologies[selected_index].image" class="h-90 flex-shrink-0 mx-5">
-            <ul>
-
-            </ul>
+            <Interconnect :currentTopology="topologies[selected_index].selection"></Interconnect>
         </div>
     </div>
 </template>
 
 <script>
 
+import Interconnect from './SvgFigure/Interconnect.vue';
+
 export default {
+
+    components: {
+        Interconnect
+    },
+
     data() {
         return {
             topologies: [
                 {
                     name: "Crossbar",
                     image: "/figure/interconnect/crossbar.svg",
+                    selection: "crossbar",
                     wire_complexity: "n^2/2",
                     longest_path: "constant",
                     bisection_bandwidth: "n^2",
@@ -52,6 +53,7 @@ export default {
                 {
                     name: "Ring",
                     image: "/figure/interconnect/ring.svg",
+                    selection: "ring",
                     wire_complexity: "3n",
                     longest_path: "n/2",
                     bisection_bandwidth: "constant",
@@ -62,6 +64,7 @@ export default {
                 {
                     name: "2D Mesh",
                     image: "/figure/interconnect/2d-mesh.svg",
+                    selection: "mesh",
                     wire_complexity: "5n - 2*sqrt(n)",
                     longest_path: "2*sqrt(n)",
                     bisection_bandwidth: "n",
@@ -72,6 +75,7 @@ export default {
                 {
                     name: "2D Torus",
                     image: "/figure/interconnect/2d-torus.svg",
+                    selection: "torus",
                     wire_complexity: "5n",
                     longest_path: "sqrt(n)",
                     bisection_bandwidth: "2n",
@@ -82,6 +86,7 @@ export default {
                 {
                     name: "Butterfly",
                     image: "/figure/interconnect/butterfly.svg",
+                    selection: "butterfly",
                     wire_complexity: "n*log(n)",
                     longest_path: "log(n)",
                     bisection_bandwidth: "2log(n)",
