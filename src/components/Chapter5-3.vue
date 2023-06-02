@@ -26,8 +26,8 @@ export default {
         return {
             workloads: [
                 {
-                    name: "Coding",
-                    icon: "i-mdi-microsoft-visual-studio-code",
+                    name: "Texting",
+                    icon: "i-mdi-file-document-edit",
                     active_region: "CPU"
                 },
                 {
