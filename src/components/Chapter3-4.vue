@@ -478,6 +478,10 @@ export default {
                                 .style("opacity", 1)
                                 // .text(hover_info[i].description);
                                 .html("<p style=\"font-size:16px;\">" + hover_info[i].description +"</p>" + img_str)
+                                .style("left", null)
+                                .style("bottom", null)
+                                .style("right",  null)
+                                .style("top", null)
                         
                             for (let k = 0; k < hover_info[i].highlight_region.length; k++) {
                                 let related_item = "#" + hover_info[i].highlight_region[k]
@@ -529,33 +533,34 @@ export default {
                             if (event.pageX < body_width/2){
                                 if (event.pageY < body_height/2) {
                                     text_tooltip
-                                        .style("left",  `${event.pageX + 20}px`)
-                                        .style("top", `${event.pageY + 20}px`)
                                         .style("right", null)
                                         .style("bottom", null)
+                                        .style("left",  `${event.pageX + 20}px`)
+                                        .style("top", `${event.pageY + 20}px`)
                                 }
                                 else {
+                                    // console.log("left bottom")
                                     text_tooltip
-                                        .style("left",  `${event.pageX + 20}px`)
-                                        .style("bottom", `${body_height - event.pageY + 20}px`)
                                         .style("right", null)
                                         .style("top", null)
+                                        .style("left",  `${event.pageX + 20}px`)
+                                        .style("bottom", `${body_height - event.pageY + 20}px`)
                                 }
                             }
                             else{
                                 if (event.pageY < body_height/2) {
                                     text_tooltip
-                                        .style("right",  `${body_width - event.pageX + 20}px`)
-                                        .style("top", `${event.pageY + 20}px`)
                                         .style("left", null)
                                         .style("bottom", null)
+                                        .style("right",  `${body_width - event.pageX + 20}px`)
+                                        .style("top", `${event.pageY + 20}px`)
                                 }
                                 else {
                                     text_tooltip
-                                        .style("right",  `${body_width - event.pageX + 20}px`)
-                                        .style("bottom", `${body_height - event.pageY + 20}px`)
                                         .style("left", null)
                                         .style("top", null)
+                                        .style("right",  `${body_width - event.pageX + 20}px`)
+                                        .style("bottom", `${body_height - event.pageY + 20}px`)
                                 }
                             }
                         });
@@ -572,6 +577,10 @@ export default {
                                 .style("opacity", 1)
                                 // .text(hover_info[i].description);
                                 .html("<p style=\"font-size:16px;\">" + hover_info[i].description +"</p>" + img_str)
+                                .style("left", null)
+                                .style("bottom", null)
+                                .style("right",  null)
+                                .style("top", null)
 
                             for (let k = 0; k < hover_info[i].highlight_region.length; k++) {
                                 let related_item = "#" + hover_info[i].highlight_region[k]
@@ -619,33 +628,34 @@ export default {
                             if (event.pageX < body_width/2){
                                 if (event.pageY < body_height/2) {
                                     text_tooltip
-                                        .style("left",  `${event.pageX + 20}px`)
-                                        .style("top", `${event.pageY + 20}px`)
                                         .style("right", null)
                                         .style("bottom", null)
+                                        .style("left",  `${event.pageX + 20}px`)
+                                        .style("top", `${event.pageY + 20}px`)
                                 }
                                 else {
+                                    // console.log("left bottom")
                                     text_tooltip
-                                        .style("left",  `${event.pageX + 20}px`)
-                                        .style("bottom", `${body_height - event.pageY + 20}px`)
                                         .style("right", null)
                                         .style("top", null)
+                                        .style("left",  `${event.pageX + 20}px`)
+                                        .style("bottom", `${body_height - event.pageY + 20}px`)
                                 }
                             }
-                            else{
+                            else{ 
                                 if (event.pageY < body_height/2) {
                                     text_tooltip
-                                        .style("right",  `${body_width - event.pageX + 20}px`)
-                                        .style("top", `${event.pageY + 20}px`)
                                         .style("left", null)
                                         .style("bottom", null)
+                                        .style("right",  `${body_width - event.pageX + 20}px`)
+                                        .style("top", `${event.pageY + 20}px`)
                                 }
                                 else {
                                     text_tooltip
-                                        .style("right",  `${body_width - event.pageX + 20}px`)
-                                        .style("bottom", `${body_height - event.pageY + 20}px`)
                                         .style("left", null)
                                         .style("top", null)
+                                        .style("right",  `${body_width - event.pageX + 20}px`)
+                                        .style("bottom", `${body_height - event.pageY + 20}px`)
                                 }
                             }
                         });
