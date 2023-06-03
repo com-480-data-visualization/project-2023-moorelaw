@@ -22,8 +22,6 @@ export default {
                     .style("border-collapse", "collapse")
                     .style("border", "2px transparent solid");
 
-            console.log(rows)
-
             // headers
             table.append("thead").append("tr")
                 .selectAll("th")
