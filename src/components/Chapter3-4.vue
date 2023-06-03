@@ -455,6 +455,7 @@ export default {
             .style("border-width", "2px")
             .style("border-radius", "5px")
             .style("padding", "5px")
+            .style("color", "black")
             .style("font-family", d3.select("body").style("font-family"));
 
         let body_rec = document.getElementsByTagName('body')[0].getBoundingClientRect()
