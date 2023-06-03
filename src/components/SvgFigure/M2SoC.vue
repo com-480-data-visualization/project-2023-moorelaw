@@ -57,15 +57,15 @@ interface HardwareInfo {
 
 const hardware_info = {
     hCPU: {
-        name: "High-performance CPU",
-        description: "General-purpose processors for logic and control tasks. (4 cores)",
+        name: "High-performance CPUs",
+        description: "General-purpose processors for logic and control tasks.",
         computation_area: 0.2,
         memory_area: 0.4,
         control_area: 0.4,
         power: 20,
     },
     eCPU: {
-        name: "Energy-efficient CPU",
+        name: "Energy-efficient CPUs",
         description: "General-purpose processors, less powerful, but consuming less power to finish the same task.",
         computation_area: 0.3,
         memory_area: 0.35,
@@ -73,7 +73,7 @@ const hardware_info = {
         power: 5
     },
     GPU: {
-        name: "Graphics Processing Unit",
+        name: "Graphics Processing Units",
         description: "Specialized hardware for graphics rendering.",
         computation_area: 0.8,
         memory_area: 0.1,
