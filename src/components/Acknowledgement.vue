@@ -15,7 +15,7 @@ import * as d3 from "d3";
 <script>
 export default {
     mounted() {
-        let table_path = "../../public/table/ack.csv"
+        let table_path = "/table/ack.csv"
         d3.text(table_path).then(function (table_path) {
             let rows = d3.csvParseRows(table_path),
                 table = d3.select('#ack_table')
