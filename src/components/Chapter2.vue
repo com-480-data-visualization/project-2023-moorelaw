@@ -2,7 +2,6 @@
 import Chapter21 from './Chapter2-1.vue';
 import Chapter22 from './Chapter2-2.vue';
 import Chapter23 from './Chapter2-3.vue';
-import Chapter24 from './Chapter2-4.vue';
 </script>
 
 <template>
@@ -16,21 +15,11 @@ import Chapter24 from './Chapter2-4.vue';
         <div class="slide flex">
             <Chapter23></Chapter23>
         </div>
-        <div class="slide flex">
-            <Chapter24></Chapter24>
-        </div>
     </div>
 </template>
 
 <style>
-.flex {
-    justify-content: center;
-    align-items: center;
-}
 
-h2 {
-    font-size: 30pt;
-}
 </style>
 
 <script>

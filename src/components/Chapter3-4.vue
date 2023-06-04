@@ -8,14 +8,31 @@ import * as d3 from "d3";
 
 <template>
     <div class="flex-col h-9/10 mt-1/30">
-        <h2 class="h-1/10 mb-1/80">Example: Intel Skylake (2015)</h2>
+        <h2 class="h-1/10 mb-1/80">A Real Processor: Intel Skylake (2015)</h2>
         <div id="whole_panel" class="flex w-7/8 mx-auto h-8/10">
             <SkylakeWorkflow class="h-full flex-shrink-0"></SkylakeWorkflow>
             <Skylake class="h-full ml-10 flex-shrink"></Skylake>
+            <div id="text_tooltip"></div>
         </div>
     </div>
 </template>
 
+<style scoped>
+
+#text_tooltip {
+    transition: opacity 0.2s ease-in-out;
+    position: absolute;
+    opacity: 0;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    pointer-events: none;
+}
+
+</style>
 
 <script>
 export default {
@@ -34,8 +51,9 @@ export default {
                     "path308-9-7", // BTB?
                     "path308-9-7-1", // Op cach Related Banch Prediction?
                 ],
-                description: "Branch Predictor",
-                metadata_plot : "../../public/figure/metadata_figure/btb.svg",
+                name: "Branch Predictor",
+                description: "This module predicts branches ahead of time. It has a table recording the recent branches' results. ",
+                metadata_plot: "../../public/figure/metadata_figure/btb.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -46,8 +64,9 @@ export default {
                     "wf_font_2",
                     "path308-1", // ITLB?
                 ],
-                description: "L1 ITLB",
-                metadata_plot : "",
+                name: "L1 ITLB",
+                description: "This buffer keeps several recent address translation record for instructions fetching.",
+                metadata_plot: "",
                 color: [
                     "#ffffff",
                 ],
@@ -59,8 +78,9 @@ export default {
                     "path308-2-9", // L1i Tags
                     "path308-2-3", // L1i Cache
                 ],
-                description: "L1 Instruction Cache",
-                metadata_plot : "../../public/figure/metadata_figure/li1.svg",
+                name: "L1 Instruction Cache",
+                description: "This buffer keeps the recently used instruction blocks so that instruction fetching do not need to go to far memory to get instructions.",
+                metadata_plot: "../../public/figure/metadata_figure/li1.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -72,8 +92,9 @@ export default {
                     "path11560", // Predecode
                     "path308-1-2", // Instruction Queue?
                 ],
-                description: "Instruction Queue",
-                metadata_plot : "",
+                name: "Instruction Queue",
+                description: "This queue keeps the instruction fetched from the L1 instruction cache. It makes sure the fetching process does not stop when decoders are busy.",
+                metadata_plot: "",
                 color: [
                     "#f5f5f5",
                 ],
@@ -93,8 +114,9 @@ export default {
                     "path308-2-3-6", // 
                     "path11846",
                 ],
-                description: "Decode",
-                metadata_plot : "../../public/figure/metadata_figure/decode_width.svg",
+                name: "Decode",
+                description: "This module break a instruction into micro operations, which are finer-grained hardware-friendly instructions.",
+                metadata_plot: "../../public/figure/metadata_figure/decode_width.svg",
                 color: [
                     "#f5f5f5",
                     "#ffffff",
@@ -109,8 +131,9 @@ export default {
                     "wf_font_9",
                     "path308-2-1-9", // MSROM?
                 ],
-                description: "Microcode",
-                metadata_plot : "",
+                name: "Microcode",
+                description: "This module assists the decoder to decode instructions. It serves as a look-up table to store the micro-op for complex instructions (e.g., vector).",
+                metadata_plot: "",
                 color: [
                     "#ffffff",
                 ],
@@ -123,8 +146,9 @@ export default {
                     "path11950", // Op Cache Tags/State?
                     "path308-2-3-6-4", // Op Cache
                 ],
-                description: "Micro-Op Cache",
-                metadata_plot : "../../public/figure/metadata_figure/mop_cache.svg",
+                name: "Micro-Op Cache",
+                description: "This buffer keeps the micro-ops from recently decoded instructions. No decoding process happens if the hardware founds required decoded micro-op inside.",
+                metadata_plot: "../../public/figure/metadata_figure/mop_cache.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -135,8 +159,9 @@ export default {
                     "wf_font_11",
                     "path308-9-7-1-8", // Decoded Instruction Queue?
                 ],
-                description: "Micro-Op Queue",
-                metadata_plot : "",
+                name: "Micro-Op Queue",
+                description: "This queue keeps the decoded micro-op so that decoding process does not stop when the reorder-buffer is busy.",
+                metadata_plot: "",
                 color: [
                     "#f5f5f5",
                 ],
@@ -147,8 +172,9 @@ export default {
                     "wf_font_12",
                     "path18245", // Backend
                 ],
-                description: "Reorder Buffer",
-                metadata_plot : "../../public/figure/metadata_figure/rob.svg",
+                name: "Reorder Buffer",
+                description: "",
+                metadata_plot: "../../public/figure/metadata_figure/rob.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -171,7 +197,7 @@ export default {
                     "path308-1-2-5", // MMX / x87 Register File
                 ],
                 description: "OoO Resources",
-                metadata_plot : "",
+                metadata_plot: "",
                 color: [
                     "#f5f5f5",
                     "#ffffff",
@@ -186,7 +212,7 @@ export default {
                     "path308-2-1-8", // Integer Register File
                 ],
                 description: "Integer Register File",
-                metadata_plot : "",
+                metadata_plot: "",
                 color: [
                     "#ffffff",
                 ],
@@ -201,7 +227,7 @@ export default {
                     "path308-2-9-5-5-4", // Extends Vector RF to 512 bits on SKL-X
                 ],
                 description: "Vector Register File",
-                metadata_plot : "",
+                metadata_plot: "",
                 color: [
                     "#ffffff",
                 ],
@@ -213,7 +239,7 @@ export default {
                     "path308-1-2-5", // MMX / x87 Register File
                 ],
                 description: "MMX / x87 Register File",
-                metadata_plot : "",
+                metadata_plot: "",
                 color: [
                     "#ffffff",
                 ],
@@ -225,7 +251,7 @@ export default {
                     "path308-2-3-6-4-1", // Reservation Station for Ports 2, 3, 7 (AGUs)?
                 ],
                 description: "AGU Scheduler",
-                metadata_plot : "",
+                metadata_plot: "",
                 color: [
                     "#f5f5f5",
                 ],
@@ -237,7 +263,7 @@ export default {
                     "path308-2-36-5", // Reservation Station for Ports 0, 1, 4, 5, 6?
                 ],
                 description: "Reservation Station",
-                metadata_plot : "../../public/figure/metadata_figure/reservation_station.svg",
+                metadata_plot: "../../public/figure/metadata_figure/reservation_station.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -253,7 +279,7 @@ export default {
                     "path308-2-3-6-4-1-9", // AGUs
                 ],
                 description: "AGU",
-                metadata_plot : "../../public/figure/metadata_figure/agu_count.svg",
+                metadata_plot: "../../public/figure/metadata_figure/agu_count.svg",
                 color: [
                     "#ffffff",
                     "#ffffff",
@@ -267,7 +293,7 @@ export default {
                     "path308-1-2-9-6-3", // Store Data Buffer
                 ],
                 description: "Store Data",
-                metadata_plot : "",
+                metadata_plot: "",
                 color: [
                     "#ffffff",
                 ],
@@ -289,7 +315,7 @@ export default {
                     "path308-2-36-7", // Integer ALUs
                 ],
                 description: "Integer ALUs",
-                metadata_plot : "../../public/figure/metadata_figure/alu_count.svg",
+                metadata_plot: "../../public/figure/metadata_figure/alu_count.svg",
                 color: [
                     "#ffffff",
                     "#ffffff",
@@ -306,7 +332,7 @@ export default {
                     "path308-2-9-5-5-45", // Integer Multiply and Divide
                 ],
                 description: "MUL",
-                metadata_plot : "",
+                metadata_plot: "",
                 color: [
                     "#ffffff",
                 ],
@@ -324,7 +350,7 @@ export default {
                     "path308-1-2-9-6-3-8", // x87 Execution?
                 ],
                 description: "Vectored FP MA",
-                metadata_plot : "",
+                metadata_plot: "",
                 color: [
                     "#f5f5f5",
                     "#f5f5f5",
@@ -345,7 +371,7 @@ export default {
                     "path308-2-36-5-7", // Mystery Vector Execution Units Duplicated 4x?
                 ],
                 description: "Vectored ALUs",
-                metadata_plot : "",
+                metadata_plot: "",
                 color: [
                     "#f5f5f5",
                     "#f5f5f5",
@@ -359,7 +385,7 @@ export default {
                     "path308-2-36", // Load Queue?
                 ],
                 description: "Load Queue",
-                metadata_plot : "../../public/figure/metadata_figure/load_queue.svg",
+                metadata_plot: "../../public/figure/metadata_figure/load_queue.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -371,7 +397,7 @@ export default {
                     "path308-2-9-5", // Store Queue?
                 ],
                 description: "Store Queue",
-                metadata_plot : "../../public/figure/metadata_figure/store_queue.svg",
+                metadata_plot: "../../public/figure/metadata_figure/store_queue.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -383,7 +409,7 @@ export default {
                     "path13460", // Load Store Unit
                 ],
                 description: "Load / Store",
-                metadata_plot : "",
+                metadata_plot: "",
                 color: [
                     "#ffffff",
                 ],
@@ -397,7 +423,7 @@ export default {
                     "path308-1-2-9-6", // L1D Cache
                 ],
                 description: "L1 DTLB and L1 Data Cache",
-                metadata_plot : "../../public/figure/metadata_figure/l1d.svg",
+                metadata_plot: "../../public/figure/metadata_figure/l1d.svg",
                 color: [
                     "#ffffff",
                     "#f5f5f5",
@@ -410,7 +436,7 @@ export default {
                     "path15132", // Fill Buffers?
                 ],
                 description: "Fill Buffers",
-                metadata_plot : "../../public/figure/metadata_figure/fill_buffer.svg",
+                metadata_plot: "../../public/figure/metadata_figure/fill_buffer.svg",
                 color: [
                     "#ffffff",
                 ],
@@ -422,7 +448,7 @@ export default {
                     "path12705", // L2 TLB
                 ],
                 description: "L2 TLB",
-                metadata_plot : "",
+                metadata_plot: "",
                 color: [
                     "#ffffff",
                 ],
@@ -436,7 +462,7 @@ export default {
                     "path308-2-10-3", // L2 Cache
                 ],
                 description: "L2 Cache",
-                metadata_plot : "",
+                metadata_plot: "",
                 // metadata_plot : "../../public/figure/metadata_figure/l2.svg",
                 color: [
                     "#f5f5f5",
@@ -444,23 +470,7 @@ export default {
             },
         ]
 
-        let text_tooltip = d3.select("html")
-            .append("div")
-            // .style("display", "inline-block")
-            .style("position", "absolute")
-            .style("opacity", 0)
-            .attr("class", "tooltip")
-            .style("background-color", "white")
-            .style("border", "solid")
-            .style("border-width", "2px")
-            .style("border-radius", "5px")
-            .style("padding", "5px")
-            .style("color", "black")
-            .style("font-family", d3.select("body").style("font-family"));
-
-        let body_rec = document.getElementsByTagName('body')[0].getBoundingClientRect()
-        let body_width = body_rec.width
-        let body_height = body_rec.height
+        let text_tooltip = d3.select("#text_tooltip");
 
         for (let i = 0; i < hover_info.length; i++) {
             for (let j = 0; j < hover_info[i].highlight_region.length; j++) {
@@ -471,19 +481,19 @@ export default {
                         .style("opacity", "0")
                         .on('mouseover', function (d, n) {
                             let img_str = ""
-                            if (hover_info[i].metadata_plot != ""){
+                            if (hover_info[i].metadata_plot != "") {
                                 img_str = "<img src=" + hover_info[i].metadata_plot + " width=400px; height=auto></img>"
                             }
-                                                                    
+
                             text_tooltip
                                 .style("opacity", 1)
                                 // .text(hover_info[i].description);
-                                .html("<p style=\"font-size:16px;\">" + hover_info[i].description +"</p>" + img_str)
+                                .html("<p style=\"font-size:16px;\">" + hover_info[i].description + "</p>" + img_str)
                                 .style("left", null)
                                 .style("bottom", null)
-                                .style("right",  null)
+                                .style("right", null)
                                 .style("top", null)
-                        
+
                             for (let k = 0; k < hover_info[i].highlight_region.length; k++) {
                                 let related_item = "#" + hover_info[i].highlight_region[k]
                                 if (related_item.startsWith("#path")) {  // in the dieshot, show up
@@ -499,10 +509,6 @@ export default {
                                     d3.select(related_item)
                                         .transition()
                                         .duration('100')
-                                        // .style("fill", "#5c88da");
-                                        // .style("fill", "#9faee5");
-                                        // .style("fill", "#7ba4db");
-                                        // .style("fill", "#89abe3");
                                         .style("fill", "#89abe3");
                                 }
                             }
@@ -530,38 +536,42 @@ export default {
                             }
                         })
                         .on('mousemove', function (event) {
-                            // console.log("mousemove")
-                            if (event.pageX < body_width/2){
-                                if (event.pageY < body_height/2) {
+                            const body_rec = document.getElementById('whole_panel').getBoundingClientRect()
+                            const body_width = body_rec.width;
+                            const body_height = body_rec.height;
+                            const relative_mouse_x = event.clientX - body_rec.left;
+                            const relative_mouse_y = event.clientY - body_rec.top;
+                            if (relative_mouse_x < body_width / 2) {
+                                if (event.pageY < body_height / 2) {
                                     text_tooltip
                                         .style("right", null)
                                         .style("bottom", null)
-                                        .style("left",  `${event.pageX + 20}px`)
-                                        .style("top", `${event.pageY + 20}px`)
+                                        .style("left", `${relative_mouse_x}px`)
+                                        .style("top", `${relative_mouse_y}px`)
                                 }
                                 else {
                                     // console.log("left bottom")
                                     text_tooltip
                                         .style("right", null)
                                         .style("top", null)
-                                        .style("left",  `${event.pageX + 20}px`)
-                                        .style("bottom", `${body_height - event.pageY + 20}px`)
+                                        .style("left", `${relative_mouse_x}px`)
+                                        .style("bottom", `${body_height - relative_mouse_y}px`)
                                 }
                             }
-                            else{
-                                if (event.pageY < body_height/2) {
+                            else {
+                                if (relative_mouse_y < body_height / 2) {
                                     text_tooltip
                                         .style("left", null)
                                         .style("bottom", null)
-                                        .style("right",  `${body_width - event.pageX + 20}px`)
-                                        .style("top", `${event.pageY + 20}px`)
+                                        .style("right", `${body_width - relative_mouse_x}px`)
+                                        .style("top", `${relative_mouse_y}px`)
                                 }
                                 else {
                                     text_tooltip
                                         .style("left", null)
                                         .style("top", null)
-                                        .style("right",  `${body_width - event.pageX + 20}px`)
-                                        .style("bottom", `${body_height - event.pageY + 20}px`)
+                                        .style("right", `${body_width - relative_mouse_x}px`)
+                                        .style("bottom", `${body_height - relative_mouse_y}px`)
                                 }
                             }
                         });
@@ -570,17 +580,17 @@ export default {
                     d3.select(hover_item)
                         .on('mouseover', function (d, n) {
                             let img_str = ""
-                            if (hover_info[i].metadata_plot != ""){
+                            if (hover_info[i].metadata_plot != "") {
                                 img_str = "<img src=" + hover_info[i].metadata_plot + " width=400px; height=auto></img>"
                             }
-                                                                    
+
                             text_tooltip
                                 .style("opacity", 1)
                                 // .text(hover_info[i].description);
-                                .html("<p style=\"font-size:16px;\">" + hover_info[i].description +"</p>" + img_str)
+                                .html("<p style=\"font-size:16px;\">" + hover_info[i].description + "</p>" + img_str)
                                 .style("left", null)
                                 .style("bottom", null)
-                                .style("right",  null)
+                                .style("right", null)
                                 .style("top", null)
 
                             for (let k = 0; k < hover_info[i].highlight_region.length; k++) {
@@ -625,38 +635,43 @@ export default {
                             }
                         })
                         .on('mousemove', function (event) {
-                            // console.log("mousemove")
-                            if (event.pageX < body_width/2){
-                                if (event.pageY < body_height/2) {
+                            const body_rec = document.getElementById('whole_panel').getBoundingClientRect()
+                            const body_width = body_rec.width;
+                            const body_height = body_rec.height;
+                            const relative_mouse_x = event.clientX - body_rec.left;
+                            const relative_mouse_y = event.clientY - body_rec.top;
+
+                            if (relative_mouse_x < body_width / 2) {
+                                if (relative_mouse_y < body_height / 2) {
                                     text_tooltip
                                         .style("right", null)
                                         .style("bottom", null)
-                                        .style("left",  `${event.pageX + 20}px`)
-                                        .style("top", `${event.pageY + 20}px`)
+                                        .style("left", `${relative_mouse_x}px`)
+                                        .style("top", `${relative_mouse_y+ 20}px`)
                                 }
                                 else {
                                     // console.log("left bottom")
                                     text_tooltip
                                         .style("right", null)
                                         .style("top", null)
-                                        .style("left",  `${event.pageX + 20}px`)
-                                        .style("bottom", `${body_height - event.pageY + 20}px`)
+                                        .style("left", `${relative_mouse_x}px`)
+                                        .style("bottom", `${body_height - relative_mouse_y + 20}px`)
                                 }
                             }
-                            else{ 
-                                if (event.pageY < body_height/2) {
+                            else {
+                                if (relative_mouse_y < body_height / 2) {
                                     text_tooltip
                                         .style("left", null)
                                         .style("bottom", null)
-                                        .style("right",  `${body_width - event.pageX + 20}px`)
-                                        .style("top", `${event.pageY + 20}px`)
+                                        .style("right", `${body_width - relative_mouse_x + 20}px`)
+                                        .style("top", `${relative_mouse_y + 20}px`)
                                 }
                                 else {
                                     text_tooltip
                                         .style("left", null)
                                         .style("top", null)
-                                        .style("right",  `${body_width - event.pageX + 20}px`)
-                                        .style("bottom", `${body_height - event.pageY + 20}px`)
+                                        .style("right", `${body_width - relative_mouse_x + 20}px`)
+                                        .style("bottom", `${body_height - relative_mouse_y + 20}px`)
                                 }
                             }
                         });

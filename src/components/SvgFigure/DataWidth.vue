@@ -1,6 +1,5 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="342px"
-        height="522px" viewBox="-0.5 -0.5 342 522" style="background-color: rgb(255, 255, 255);">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-0.5 -0.5 342 522" style="background-color: rgb(255, 255, 255);">
         <defs>
             <pattern id="intel_4004_picture" x="0" y="0" patternUnits="userSpaceOnUse" height="40" width="40">
                 <image x="0" y="0" xlink:href="/figure/product_figure/intel_4004.jpg" height="40" width="40"></image>

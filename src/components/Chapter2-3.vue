@@ -18,7 +18,7 @@ import OrGate from "./SvgFigure/OrGate.vue";
                 class="font-bold">AND</code>, <code class="font-bold">OR</code>) is shown in the following figure.</p>
     </div>
 
-    <div class="flex my-10">
+    <div class="flex flex-justify-center my-10">
         <div class="flex-col mx-15">
             <NotGate class="h-85"></NotGate>
             <p>NOT</p>
@@ -33,11 +33,10 @@ import OrGate from "./SvgFigure/OrGate.vue";
         </div>
     </div>
 
-    <div class="flex flex-justify mx-50">
+    <div class="flex flex-justify flex-items-center mx-50">
         <div class="i-mdi-information-slab-circle mx-2"></div>
         <p class="my-4"> You can change gates' input voltage and observe each transistor state (dashed - off,
             solid - on) and the output.</p>
-
     </div>
 </template>
 

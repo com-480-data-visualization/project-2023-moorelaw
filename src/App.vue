@@ -2,6 +2,7 @@
 import Cover from "./components/Cover.vue";
 import Chapter2 from "./components/Chapter2.vue";
 import MooresLaw from "./components/MooresLaw.vue";
+import MooresLawFigure from './components/MooresLawFigure.vue';
 import Chapter3 from "./components/Chapter3.vue";
 import Chapter4 from "./components/Chapter4.vue";
 import Chapter5 from "./components/Chapter5.vue";
@@ -14,6 +15,7 @@ import Acknowledgement from "./components/Acknowledgement.vue";
     <Cover></Cover>
     <Chapter2></Chapter2>
     <MooresLaw></MooresLaw>
+    <MooresLawFigure></MooresLawFigure>
     <Chapter3></Chapter3>
     <Chapter4></Chapter4>
     <Chapter5></Chapter5>
@@ -49,6 +51,12 @@ header {
     flex-wrap: wrap;
   }
 }
+
+h2 {
+    font-size: 30pt;
+}
+
+
 </style>
 
 <script>

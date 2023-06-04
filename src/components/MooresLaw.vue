@@ -1,16 +1,15 @@
 <script setup>
-import MooresLawFigure from './MooresLawFigure.vue';
+import TransistorScaling from './TransistorScaling.vue';
 import MooresLawIntro from './MooresLawIntro.vue';
 </script>
 
 <template>
     <div class="section">
         <div class="slide flex">
-            <MooresLawIntro></MooresLawIntro>
+            <TransistorScaling></TransistorScaling>
         </div>
-
         <div class="slide flex">
-            <MooresLawFigure></MooresLawFigure>
+            <MooresLawIntro></MooresLawIntro>
         </div>
     </div>
 </template>

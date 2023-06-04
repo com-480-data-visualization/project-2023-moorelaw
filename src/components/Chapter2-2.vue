@@ -13,7 +13,7 @@
         </p>
 
     </div>
-    <div class="flex my-10">
+    <div class="flex flex-justify-center flex-items-center my-10 ">
         <img src="/figure/transistor_symbol.svg" class="h-60" />
     </div>
 

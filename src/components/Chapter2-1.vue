@@ -22,7 +22,7 @@ import Transistor from './SvgFigure/Transistor.vue';
             formed when the gate voltage is high.
         </p>
 
-        <div class="flex flex-justify-initial">
+        <div class="flex flex-items-center flex-justify-initial">
             <div class="i-mdi-information-slab-circle mx-2"></div>
             <p class="my-4"> You can raise the voltage by clicking the gate and the source, and observe its effect.</p>
 
@@ -30,7 +30,7 @@ import Transistor from './SvgFigure/Transistor.vue';
 
     </div>
 
-    <div class="flex">
+    <div class="flex flex-justify-center">
         <Transistor></Transistor>
     </div>
 </template>

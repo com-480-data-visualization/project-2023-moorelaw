@@ -1,5 +1,5 @@
 <template>
-    <svg viewBox="0 0 1200 220">
+    <svg viewBox="0 0 1100 220">
         <!-- List each instruction -->
         <text v-for="(inst, idx) of instructions" x="0" :y="idx * 20 + 50" fill="#000" font-family="Hack" font-size="12px">
             {{ inst }} </text>

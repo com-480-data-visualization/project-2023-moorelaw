@@ -16,7 +16,7 @@
     </p>
   </div>
 
-  <div class="flex mb-0">
+  <div class="flex flex-justify-center mb-0">
     <label class="mx-5"><input type="radio" v-model="selected_value" checked value="dt"> Delay Trend </label>
     <label class="mx-5"><input type="radio" v-model="selected_value" value="pt"> Power Trend</label>
     <label class="mx-5"><input type="radio" v-model="selected_value" value="at"> Area Trend </label>

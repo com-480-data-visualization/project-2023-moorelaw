@@ -1,12 +1,13 @@
 <template>
-  <h2 class="mb-10">50-Year Trend of CPU Design</h2>
-  <!-- svg id="sub_svg"></svg -->
-  <!-- <img src="/figure/cpu-trend.svg" class="w-4/5"> -->
-  <div id="mooreslaw_svg" class="h-150">
-    <svg></svg>
-    <div class="tooltip"></div>
+  <div class="section">
+    <div class="slide flex">
+      <h2 class="mb-10">50-Year Trend of CPU Design</h2>
+      <div id="mooreslaw_svg" class="h-150">
+        <svg></svg>
+        <div class="tooltip"></div>
+      </div>
+    </div>
   </div>
-  <!-- <p class="">TODO: Repaint this figure with d3.js. </p> -->
 </template>
 
 <style scoped>
