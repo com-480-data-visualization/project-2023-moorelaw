@@ -4,7 +4,7 @@ import * as d3 from "d3";
 
 <template>
     <div class="section text-center">
-        <div class="flex">
+        <div class="flex flex-justify-center flex-items-center">
             <h1 class="mr-30">Acknowledgement</h1>
             <table id="ack_table"></table>
         </div>

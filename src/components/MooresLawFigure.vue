@@ -54,6 +54,9 @@ onMounted(() => {
     .attr("x1", 1400).attr("y1", 0)
     .attr("x2", 1400).attr("y1", height)
 
+  svg.append("text").attr("x", 1100).attr("y", height - 40).attr("fill", "#0076db").attr("font-size", "1.5rem").text("Multicore Era")
+  svg.append("text").attr("x", 1420).attr("y", height - 40).attr("fill", "#0076db").attr("font-size", "1.5rem").text("Specialization Era")
+
   const yTickValues = [10 ** 1, 10 ** 3, 10 ** 5, 10 ** 7];
   const dotSize = 5
   const dotSizeEnlarge = 8
@@ -65,6 +68,17 @@ onMounted(() => {
       d.year = +d.year;
       d.value = +d.value;
     });
+
+    let rational_data = new Map();
+
+    data.forEach((d) => {
+      if (!rational_data.has(d.year)) {
+        rational_data.set(d.year, new Map());
+      }
+      rational_data.get(d.year).set(d.type, d.value);
+    });
+
+    console.log(rational_data);
 
     let hoverLine = svg.append('line')
       .attr('class', 'hover-line')
@@ -81,10 +95,33 @@ onMounted(() => {
 
     let showTooltip = function (d) {
       // <img src="./image.png" alt="Image" style="width: 100px;">
+      let current_year = d3.select(d.target).attr("data-year");
+      let html_contents = [];
+      html_contents.push(`Year: ${Math.floor(current_year)}`);
+
+      console.log(current_year);
+      console.log(rational_data);
+
+      let current_data = rational_data.get(parseFloat(current_year));
+
+      if (current_data) {
+        if (current_data.has("transistors")) {
+          html_contents.push(`Transistor count: ${Math.floor(current_data.get("transistors") / 1000)}K`);
+        }
+        if (current_data.has("frequency")) {
+          html_contents.push(`Frequency: ${Math.floor(current_data.get("frequency"))}MHz`);
+        }
+        if (current_data.has("cores")) {
+          html_contents.push(`Core count: ${current_data.get("cores")}`);
+        }
+        if (current_data.has("specint")) {
+          html_contents.push(`SPECint Score (Performance): ${Math.floor(current_data.get("specint"))}`);
+        }
+      }
+
       const htmlContent = `
-            <div>
-                <p>cpu year: ${Math.floor(d3.select(d.target).attr("data-year"))}</p>
-                <p>${d3.select(d.target).attr("data-type")} value: ${(Math.round(d3.select(d.target).attr("data-value") * 100) / 100).toFixed(2)}</p>
+            <div class="text-justify">
+              ${html_contents.map((t) => `<p>${t}</p>`).join("\n")}
             </div>
         `;
 
