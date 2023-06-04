@@ -51,8 +51,8 @@ onMounted(() => {
     .attr("x1", 1083).attr("y1", 0)
     .attr("x2", 1083).attr("y1", height)
   svg.append("line").style('stroke', 'salmon').style('stroke-width', '1px').style('stroke-dasharray', '3 3')
-    .attr("x1", 1500).attr("y1", 0)
-    .attr("x2", 1500).attr("y1", height)
+    .attr("x1", 1400).attr("y1", 0)
+    .attr("x2", 1400).attr("y1", height)
 
   const yTickValues = [10 ** 1, 10 ** 3, 10 ** 5, 10 ** 7];
   const dotSize = 5

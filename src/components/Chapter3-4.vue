@@ -30,6 +30,10 @@ import * as d3 from "d3";
     color: black;
     background-color: white;
     pointer-events: none;
+
+    width: 450px;
+
+    text-align: justify;
 }
 
 </style>
@@ -53,7 +57,7 @@ export default {
                 ],
                 name: "Branch Predictor",
                 description: "This module predicts branches ahead of time. It has a table recording the recent branches' results. ",
-                metadata_plot: "../../public/figure/metadata_figure/btb.svg",
+                metadata_plot: "/figure/metadata_figure/btb.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -80,7 +84,7 @@ export default {
                 ],
                 name: "L1 Instruction Cache",
                 description: "This buffer keeps the recently used instruction blocks so that instruction fetching do not need to go to far memory to get instructions.",
-                metadata_plot: "../../public/figure/metadata_figure/li1.svg",
+                metadata_plot: "/figure/metadata_figure/li1.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -116,7 +120,7 @@ export default {
                 ],
                 name: "Decode",
                 description: "This module break a instruction into micro operations, which are finer-grained hardware-friendly instructions.",
-                metadata_plot: "../../public/figure/metadata_figure/decode_width.svg",
+                metadata_plot: "/figure/metadata_figure/decode_width.svg",
                 color: [
                     "#f5f5f5",
                     "#ffffff",
@@ -148,7 +152,7 @@ export default {
                 ],
                 name: "Micro-Op Cache",
                 description: "This buffer keeps the micro-ops from recently decoded instructions. No decoding process happens if the hardware founds required decoded micro-op inside.",
-                metadata_plot: "../../public/figure/metadata_figure/mop_cache.svg",
+                metadata_plot: "/figure/metadata_figure/mop_cache.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -173,8 +177,8 @@ export default {
                     "path18245", // Backend
                 ],
                 name: "Reorder Buffer",
-                description: "",
-                metadata_plot: "../../public/figure/metadata_figure/rob.svg",
+                description: "This buffer tracks all instructions being executed in parallel, and roll back the processor state if necessary. ",
+                metadata_plot: "/figure/metadata_figure/rob.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -196,7 +200,8 @@ export default {
                     "wf_font_15",
                     "path308-1-2-5", // MMX / x87 Register File
                 ],
-                description: "OoO Resources",
+                name: "OoO Resources",
+                description: "OoO resources contain all registers resources for micro-ops.",
                 metadata_plot: "",
                 color: [
                     "#f5f5f5",
@@ -211,7 +216,8 @@ export default {
                     "wf_font_13",
                     "path308-2-1-8", // Integer Register File
                 ],
-                description: "Integer Register File",
+                name: "Integer Register File",
+                description: "Register for scalar integer operations (e.g., add, mul, load and store)",
                 metadata_plot: "",
                 color: [
                     "#ffffff",
@@ -226,7 +232,8 @@ export default {
                     "path308-2-9-5-5", // Extends Vector RF to 512 bits on SKL-X
                     "path308-2-9-5-5-4", // Extends Vector RF to 512 bits on SKL-X
                 ],
-                description: "Vector Register File",
+                name: "Vector Register File",
+                description: "Registers for vector integer/float-point operations. ",
                 metadata_plot: "",
                 color: [
                     "#ffffff",
@@ -238,7 +245,8 @@ export default {
                     "wf_font_15",
                     "path308-1-2-5", // MMX / x87 Register File
                 ],
-                description: "MMX / x87 Register File",
+                name: "MMX / x87 Register File",
+                description: "Registers for scalar floating-point operations and legacy 2-element vector floating-point operations. ",
                 metadata_plot: "",
                 color: [
                     "#ffffff",
@@ -250,7 +258,8 @@ export default {
                     "wf_font_16",
                     "path308-2-3-6-4-1", // Reservation Station for Ports 2, 3, 7 (AGUs)?
                 ],
-                description: "AGU Scheduler",
+                name: "Address Generation Scheduler",
+                description:"Scheduler for reordering operations related to the memory address generation.",
                 metadata_plot: "",
                 color: [
                     "#f5f5f5",
@@ -262,8 +271,9 @@ export default {
                     "wf_font_17",
                     "path308-2-36-5", // Reservation Station for Ports 0, 1, 4, 5, 6?
                 ],
-                description: "Reservation Station",
-                metadata_plot: "../../public/figure/metadata_figure/reservation_station.svg",
+                name: "Reservation Station",
+                description: "Scheduler for reordering computation operations (e.g., adder, multiplier, division) and branches. Its size determine the processors' reorder ability.",
+                metadata_plot: "/figure/metadata_figure/reservation_station.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -278,8 +288,9 @@ export default {
                     "wf_font_20",
                     "path308-2-3-6-4-1-9", // AGUs
                 ],
-                description: "AGU",
-                metadata_plot: "../../public/figure/metadata_figure/agu_count.svg",
+                name: "Address Generation Unit",
+                description: "Hardware to calculate memory access addresses.",
+                metadata_plot: "/figure/metadata_figure/agu_count.svg",
                 color: [
                     "#ffffff",
                     "#ffffff",
@@ -292,7 +303,8 @@ export default {
                     "wf_font_21",
                     "path308-1-2-9-6-3", // Store Data Buffer
                 ],
-                description: "Store Data",
+                name: "Store Data",
+                description: "This buffer keeps the store data that are not dispatched to the memory due to the order dependency.",
                 metadata_plot: "",
                 color: [
                     "#ffffff",
@@ -314,8 +326,9 @@ export default {
                     "wf_font_27",
                     "path308-2-36-7", // Integer ALUs
                 ],
-                description: "Integer ALUs",
-                metadata_plot: "../../public/figure/metadata_figure/alu_count.svg",
+                name: "Integer Arithmetic and Logic Unit",
+                description: "This module calculates the result of simple integer operations (e.g., add, sub, and, or, not).",
+                metadata_plot: "/figure/metadata_figure/alu_count.svg",
                 color: [
                     "#ffffff",
                     "#ffffff",
@@ -331,7 +344,8 @@ export default {
                     "wf_font_28",
                     "path308-2-9-5-5-45", // Integer Multiply and Divide
                 ],
-                description: "MUL",
+                name: "Integer Multiplier and Divider",
+                description: "This module calculates the result of complex integer operations that last for more than one cycle, e.g., multiplier, division, and square-root.",
                 metadata_plot: "",
                 color: [
                     "#ffffff",
@@ -349,7 +363,8 @@ export default {
                     "path308-2-9-4-0", // 64-bit FMA Unit
                     "path308-1-2-9-6-3-8", // x87 Execution?
                 ],
-                description: "Vectored FP MA",
+                name: "Vectored Floating Point Unit",
+                description: "This module calculates the result of floating-point scalar and vector operations.",
                 metadata_plot: "",
                 color: [
                     "#f5f5f5",
@@ -370,7 +385,8 @@ export default {
                     "path308-2-3-6-4-2-7", // Vector Integer Execution?
                     "path308-2-36-5-7", // Mystery Vector Execution Units Duplicated 4x?
                 ],
-                description: "Vectored ALUs",
+                name: "Vector Integer Unit",
+                description: "This module calculates the result of vector integer operations.",
                 metadata_plot: "",
                 color: [
                     "#f5f5f5",
@@ -384,8 +400,9 @@ export default {
                     "wf_font_34",
                     "path308-2-36", // Load Queue?
                 ],
-                description: "Load Queue",
-                metadata_plot: "../../public/figure/metadata_figure/load_queue.svg",
+                name: "Load Queue",
+                description: "This module tracks the load operations waiting for its data arrival from the memory.",
+                metadata_plot: "/figure/metadata_figure/load_queue.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -396,8 +413,9 @@ export default {
                     "wf_font_35",
                     "path308-2-9-5", // Store Queue?
                 ],
-                description: "Store Queue",
-                metadata_plot: "../../public/figure/metadata_figure/store_queue.svg",
+                name: "Store Queue",
+                description: "This module tracks the finished store operations waiting for order dependency. Incoming load operations need to check this module to get the latest value of a memory region.",
+                metadata_plot: "/figure/metadata_figure/store_queue.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -408,7 +426,8 @@ export default {
                     "wf_font_36",
                     "path13460", // Load Store Unit
                 ],
-                description: "Load / Store",
+                name: "Load / Store Unit",
+                description: "This hardware manages all inflight memory accesses for resource allocation, order tracking, data dependency forwarding, and rolling back.",
                 metadata_plot: "",
                 color: [
                     "#ffffff",
@@ -416,14 +435,26 @@ export default {
             },
             {
                 highlight_region: [
-                    "wf_l1_dtlb",
                     "wf_l1_data_cache",
-                    "wf_font_37",
                     "wf_font_38",
                     "path308-1-2-9-6", // L1D Cache
                 ],
-                description: "L1 DTLB and L1 Data Cache",
-                metadata_plot: "../../public/figure/metadata_figure/l1d.svg",
+                name: "L1 Data Cache",
+                description: "This memory buffers the recently accessed data from memory so that memory operations do not need to go to the main memory if they find the result in this buffer.",
+                metadata_plot: "/figure/metadata_figure/l1d.svg",
+                color: [
+                    "#ffffff",
+                    "#f5f5f5",
+                ],
+            },
+            {
+                highlight_region: [
+                    "wf_l1_dtlb",
+                    "wf_font_37",
+                ],
+                name: "L1 DTLB",
+                description: "This buffer keeps the address translation record for memory access.",
+                metadata_plot: "",
                 color: [
                     "#ffffff",
                     "#f5f5f5",
@@ -435,8 +466,9 @@ export default {
                     "wf_font_39",
                     "path15132", // Fill Buffers?
                 ],
-                description: "Fill Buffers",
-                metadata_plot: "../../public/figure/metadata_figure/fill_buffer.svg",
+                name: "Fill Buffers",
+                description: "This buffer keeps the pending memory access to the next-level of cache.",
+                metadata_plot: "/figure/metadata_figure/fill_buffer.svg",
                 color: [
                     "#ffffff",
                 ],
@@ -447,7 +479,8 @@ export default {
                     "wf_font_40",
                     "path12705", // L2 TLB
                 ],
-                description: "L2 TLB",
+                name: "L2 TLB",
+                description: "This buffer keeps the address translation record, as another level of cache for instruction and data TLBs.",
                 metadata_plot: "",
                 color: [
                     "#ffffff",
@@ -461,9 +494,10 @@ export default {
                     "path308-2-3-2", // L2 Control
                     "path308-2-10-3", // L2 Cache
                 ],
-                description: "L2 Cache",
+                name: "L2 Cache",
+                description: "This buffer captures the recent memory access from L1 instruction and data accesses. It is greatly larger than two L1 caches, so it can buffer more data.",
                 metadata_plot: "",
-                // metadata_plot : "../../public/figure/metadata_figure/l2.svg",
+                // metadata_plot : "/figure/metadata_figure/l2.svg",
                 color: [
                     "#f5f5f5",
                 ],
@@ -482,13 +516,16 @@ export default {
                         .on('mouseover', function (d, n) {
                             let img_str = ""
                             if (hover_info[i].metadata_plot != "") {
-                                img_str = "<img src=" + hover_info[i].metadata_plot + " width=400px; height=auto></img>"
+                                const promot = `<p class='text-sl mx-1'>Recent trend:</p>`;
+                                img_str = promot + "<img src=" + hover_info[i].metadata_plot + " width=400px; height=auto></img>"
                             }
+
+                            const title_text = `<p class="font-bold mx-1">${hover_info[i].name}</p>`
 
                             text_tooltip
                                 .style("opacity", 1)
                                 // .text(hover_info[i].description);
-                                .html("<p style=\"font-size:16px;\">" + hover_info[i].description + "</p>" + img_str)
+                                .html(title_text + "<p class='mx-1 text-sl'>" + hover_info[i].description + "</p>" + img_str)
                                 .style("left", null)
                                 .style("bottom", null)
                                 .style("right", null)
@@ -581,13 +618,16 @@ export default {
                         .on('mouseover', function (d, n) {
                             let img_str = ""
                             if (hover_info[i].metadata_plot != "") {
-                                img_str = "<img src=" + hover_info[i].metadata_plot + " width=400px; height=auto></img>"
+                                const promot = `<p class='text-sl mx-1'>Recent trend:</p>`;
+                                img_str = promot + "<img src=" + hover_info[i].metadata_plot + " width=400px; height=auto></img>"
                             }
+
+                            const title_text = `<p class="font-bold mx-1">${hover_info[i].name}</p>`
 
                             text_tooltip
                                 .style("opacity", 1)
                                 // .text(hover_info[i].description);
-                                .html("<p style=\"font-size:16px;\">" + hover_info[i].description + "</p>" + img_str)
+                                .html(title_text + "<p class='mx-1 text-sl'>" + hover_info[i].description + "</p>" + img_str)
                                 .style("left", null)
                                 .style("bottom", null)
                                 .style("right", null)
@@ -601,14 +641,14 @@ export default {
                                         .duration('100')
                                         .style('opacity', '1');
                                 }
-                                else if (!related_item.startsWith("#wf_font")) {  // fonts in the workflow, do nothing
-                                    // blocks in the workflow, change color TODO
+                                else if (related_item.startsWith("#wf_font")) {  // fonts in the workflow, do nothing
+
+                                }
+                                else {  // blocks in the workflow, change color TODO
                                     d3.select(related_item)
                                         .transition()
                                         .duration('100')
-                                        // .style("fill", "#5c88da");
-                                        // .style("fill", "#9faee5");
-                                        .style("fill", "#7ba4db");
+                                        .style("fill", "#89abe3");
                                 }
                             }
                         })
