@@ -6,6 +6,21 @@
 | Shanqing Lin | 322975 |
 | Duo Xu | 338095 |
 
+## Guidance
+
+This visualization project aims for showing the Moore's law, the most impactful observation that accompanies the evolution of modern society. It also includes the evolution of CPU, including the single-threaded performance improvement, how to build multiple cores, and the specialization hardware on modern system-on-chip. 
+
+Please find the website here: https://com-480-moorelaw.github.io/
+
+
+Process book: [here](./m3/Processbook.pdf)
+
+Fixed Video: [here](https://drive.google.com/file/d/1LaxqDie57vizW11qgXo6CGEkkLWh_ehk/view?usp=sharing)
+
+(We do not touch any website content in the last commit, so the website is still the version before 5:00PM. )
+
+
+
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
 ## Milestone 1 (23rd April, 5pm)
@@ -79,6 +94,7 @@ For the functional prototype, please visit https://com-480-moorelaw.github.io/
 **80% of the final grade**
 
 For the process book, please check [here](./m3/Processbook.pdf).
+
 
 ## Late policy
 
