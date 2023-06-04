@@ -1,6 +1,6 @@
 <template>
     <div class="section bg text-center">
-        <div class="flex mt-30">
+        <div class="flex flex-justify-center mt-30">
             <img src="/figure/mooreslaw1965.png" class="h-110 mr-40">
             <div class="flex flex-col">
                 <img src="/figure/gordon_moore.jpeg" class="h-100">

@@ -3,21 +3,27 @@ import DataWidth from './SvgFigure/DataWidth.vue';
 </script>
 
 <template>
-    <h2>Wide Data Width</h2>
-    <div class="flex mt-5 mb-0">
-        <div class="text-justify w-1/3 ml-20">
-            <p class="mb-5">(Not serious, for wider scalar) Well, the wider is better. It can simply use the memory bus more
-                efficiently. This is also a hard requirement, because the width of an address must be large enough (at
-                present 64bit is enough) to use a large memory.</p>
-            <p>Some workloads have vector processing (e.g., Video/Image decoding, scientific computing) requirement, so
-                bringing in wider vector is a good option. </p>
-            <p>There are two main ways to use large data width</p>
-            <ul>
-                <li>Larger data encodings, double floating point, floating point, 16-bit integer, 8-bit integer</li>
-                <li>Vector, which means the processor can handle multiple elements in parallel.</li>
-            </ul>
+    <div class="flex flex-justify-center flex-items-center mx-30">
+        <div class="mr-30 w-1/2">
+            <h2 class="mb-10">Trend 1: Wider Data Path</h2>
+            <div class="text-justify">
+                <p class="my-4">
+                    Data from the real world must be encoded into binary before being processed by a computer.
+                    A wider processor means it can handle more information per instruction, either higher precision or multiple scalars.
+                </p>
+                <p class="my-4">
+                    The early stage of building wider data was to introduce wider scalar, e.g., from 4-bit per scalar (1971) to 64-bit scalar (1991).
+                    During this period, programs that handle multiple low-precision (8-bit) appeared (e.g., graphics rendering). 
+                    As a result, processors started to integrate the ability to handle multiple scalars (i.e. vector processing) by borrowing experiences from supercomputers like Cray X1.
+                </p>
+                <p class="my-4">
+                    With the prevalence of deep learning algorithms, recent processors (e.g., Intel Xeon Sapphire Rapids) also integrated the ability to perform tensor operations, whose elements are usually 8-bit. 
+                </p>
+                <p class="my-4">
+                    Wider data path also improves the utilization of memory system: Each request now can transfer more data chunks, thus amortizing the cost of controlling and synchronization. 
+                </p>
+            </div>
         </div>
-        <DataWidth class="w-1/4 ml-1/12 mr-1/8 h-1/2"></DataWidth>
-
+        <DataWidth class="h-160"></DataWidth>
     </div>
 </template>
