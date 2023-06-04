@@ -78,6 +78,7 @@ For the functional prototype, please visit https://com-480-moorelaw.github.io/
 
 **80% of the final grade**
 
+For the process book, please check [here](./m3/Processbook.pdf).
 
 ## Late policy
 
