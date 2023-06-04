@@ -1,8 +1,12 @@
 <template>
-    <h1>Specialized Circuits Are Widely Used!</h1>
-    <div class="flex mt-10 mb-10">
-        <div class="flex flex-col w-60 mx-40 items-start">
-            <div class="flex mt-10 justify-start " v-for="work in workloads" ref="buttons">
+    <h2>Example: Apple M2 (2022) SoC</h2>
+    <div class="flex flex-items-center flex-justify-center mx-50">
+        <div class="i-mdi-information-slab-circle mx-2"></div>
+        <p class="my-4"> You can select workloads (by clicking its logo) and see which part of the SoC is activated.</p>
+    </div>
+    <div class="flex flex-justify-center mt-10 mb-10">
+        <div class="flex  flex-col w-60 mx-40 items-start">
+            <div class="flex mt-10 flex-items-center justify-start " v-for="work in workloads" ref="buttons">
                 <div :class="`${work.icon} w-20 h-20`"></div>
                 <p class="ml-5 text-left"> {{ work.name }} </p>
             </div>
@@ -10,6 +14,14 @@
         <M2SoC ref="m2_diagram"></M2SoC>
     </div>
 </template>
+
+<style scoped>
+
+.i-mdi-information-slab-circle {
+    @apply w-6 h-6;
+}
+</style>
+
 
 
 <script setup lang="ts">

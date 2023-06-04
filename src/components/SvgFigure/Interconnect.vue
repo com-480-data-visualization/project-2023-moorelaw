@@ -3,8 +3,7 @@
     1. All the cores are marked with Core ID
     2. Other components are grouped.
 -->
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="301px"
-        height="301px" viewBox="-0.5 -0.5 301 301" style="background-color: rgb(255, 255, 255);">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-0.5 -0.5 301 301" style="background-color: rgb(255, 255, 255);">
         <defs />
         <g id="interconnect_cores">
 

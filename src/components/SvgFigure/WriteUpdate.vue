@@ -162,11 +162,12 @@
 
 <style scoped>
 input[type=text] {
-    @apply w-4/5 h-3/5;
+    @apply w-4/5 h-4/5;
     border: 0;
     padding: 0;
     text-align: center;
     font-size: 12px;
+    background-color: salmon;
 }
 </style>
 
