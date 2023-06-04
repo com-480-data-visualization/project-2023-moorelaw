@@ -31,16 +31,12 @@ import Transistor from './SvgFigure/Transistor.vue';
     </div>
 
     <div class="flex">
-        <div class="w-5/8">
-            <Transistor></Transistor>
-        </div>
+        <Transistor></Transistor>
     </div>
 </template>
 
 <style scoped>
-
 .i-mdi-information-slab-circle {
     @apply w-6 h-6;
 }
-
 </style>

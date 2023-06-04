@@ -57,7 +57,7 @@ export default {
   data() {
     return {
       options: {
-        scrollOverflow: true,
+        scrollOverflow: false,
         navigation: true,
         slidesNavigation: true
       }

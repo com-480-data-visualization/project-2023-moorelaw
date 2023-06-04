@@ -10,9 +10,13 @@
       <li>Smaller gate capacitance, meaning lower power consumption when switching gate voltages.</li>
       <li>More transistors per unit area.</li>
     </ul>
+
+    <p class="my-4">
+      These rules are also famous as <a href="https://en.wikipedia.org/wiki/Dennard_scaling">Dennard scaling</a>.
+    </p>
   </div>
 
-  <div class="flex mb-3">
+  <div class="flex mb-0">
     <label class="mx-5"><input type="radio" v-model="selected_value" checked value="dt"> Delay Trend </label>
     <label class="mx-5"><input type="radio" v-model="selected_value" value="pt"> Power Trend</label>
     <label class="mx-5"><input type="radio" v-model="selected_value" value="at"> Area Trend </label>
@@ -20,14 +24,6 @@
 
   <div id="scaling_svg_figure" class="w-300 mx-auto"></div>
 </template>
-
-<style scoped>
-.connected-svg {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18;
-}
-</style>
-
 
 <script setup>
 
